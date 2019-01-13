@@ -13,6 +13,7 @@ target 'BetterSleep' do
   pod 'LTMorphingLabel'
   pod 'paper-onboarding', :path => './LocalPods/PaperOnboarding'
   pod 'ESTabBarController-swift'
+  pod 'lottie-ios'
   
   # Dependencies
   pod 'Dip'

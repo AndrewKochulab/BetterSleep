@@ -2,6 +2,7 @@ PODS:
   - AudioKit/Core (4.5.6)
   - Dip (7.0.1)
   - ESTabBarController-swift (2.6.4)
+  - lottie-ios (2.5.2)
   - LTMorphingLabel (0.5.9)
   - paper-onboarding (5.0.0)
   - R.swift (5.0.0):
@@ -14,6 +15,7 @@ DEPENDENCIES:
   - AudioKit/Core
   - Dip
   - ESTabBarController-swift
+  - lottie-ios
   - LTMorphingLabel
   - paper-onboarding (from `./LocalPods/PaperOnboarding`)
   - R.swift
@@ -25,6 +27,7 @@ SPEC REPOS:
     - AudioKit
     - Dip
     - ESTabBarController-swift
+    - lottie-ios
     - LTMorphingLabel
     - R.swift
     - R.swift.Library
@@ -39,6 +42,7 @@ SPEC CHECKSUMS:
   AudioKit: 84f5a444902a74ac32cfe8488e72782792ff2edc
   Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   LTMorphingLabel: e6047354486aa4ba52d36ccc40be8874b50e1ef1
   paper-onboarding: 25ad70ea8469b57f5aaee1914c2f6a37b996dd87
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
@@ -46,6 +50,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SPPermission: f9f1ef0474fe3830e58afd6f7922718060c95345
 
-PODFILE CHECKSUM: 5f52fe0de2ff11b40451c6ab57a1646fd64dff3a
+PODFILE CHECKSUM: 97abb68aeb4f6225f9d30de8a8ec805d6270b125
 
 COCOAPODS: 1.5.3
