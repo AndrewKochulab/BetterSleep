@@ -20,8 +20,12 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         // FIXME: Check if user already watched the onboarding
         
         showLaunchController { [unowned self] in
-            self.showWelcomeCoordinator(animated: animated, completion: completion)
+            self.showMainFlow(animated: animated, completion: completion)
         }
+
+//        showLaunchController { [unowned self] in
+//            self.showWelcomeCoordinator(animated: animated, completion: completion)
+//        }
     }
     
     private func showLaunchController(
@@ -66,10 +70,12 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         )
         
         coordinator.didCompleteTutorial = { [unowned self] in
-            self.showMainCoordinator(animated: true)
+            self.showLaunchController {
+                self.showMainFlow(animated: false, completion: {})
+            }
         }
         
-        coordinator.didFinish = { [unowned self] in
+        coordinator.didFinish = { [unowned self, unowned coordinator] in
             self.remove(coordinator: coordinator)
         }
         
@@ -77,9 +83,20 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         coordinator.start(animated: animated)
     }
     
-    private func showMainCoordinator(
-        animated: Bool
+    private func showMainFlow(
+        animated: Bool,
+        completion: @escaping () -> Void
     ) {
+        let flow = assembly.mainFlow(
+            navigationController: navigationController
+        )
         
+        flow.didStart = completion
+        flow.didFinish = { [unowned self, unowned flow] in
+            self.remove(coordinator: flow)
+        }
+        
+        add(coordinator: flow)
+        flow.start(animated: animated)
     }
 }

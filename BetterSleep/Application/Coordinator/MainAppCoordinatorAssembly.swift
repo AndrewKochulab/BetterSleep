@@ -34,4 +34,15 @@ final class MainAppCoordinatorAssembly: BaseCoordinatorAssembly {
         return LaunchViewController(viewModel: .init())
     }
     
+    func mainFlow(
+        content: MainFlowContent = .init(),
+        navigationController: NavigationController
+    ) -> MainFlow {
+        return MainFlow(
+            content: content,
+            assembly: .init(),
+            navigationController: navigationController
+        )
+    }
+    
 }

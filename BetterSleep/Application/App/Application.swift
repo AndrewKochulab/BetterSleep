@@ -26,16 +26,22 @@ final class Application:
     // MARK: - Initialization
     
     override convenience init() {
+        let navigationController = NavigationController(
+            rootViewController: UIViewController(
+                nibName: nil,
+                bundle: nil
+            )
+        )
+        
+        navigationController.setNavigationBarHidden(true, animated: false)
+        
+        let coordinator = MainAppCoordinator(
+            assembly: .init(),
+            navigationController: navigationController
+        )
+        
         self.init(
-            coordinator: MainAppCoordinator(
-                assembly: .init(),
-                navigationController: NavigationController(
-                    rootViewController: UIViewController(
-                        nibName: nil,
-                        bundle: nil
-                    )
-                )
-            ),
+            coordinator: coordinator,
             window: .init(frame: UIScreen.main.bounds),
             configuration: MainAppConfiguration()
         )
