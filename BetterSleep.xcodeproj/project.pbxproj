@@ -64,6 +64,7 @@
 		8EE32A9A21E23A5E00FB3501 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE32A9921E23A5E00FB3501 /* View.swift */; };
 		8EE32A9D21E23AA000FB3501 /* WaterDropsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE32A9C21E23AA000FB3501 /* WaterDropsView.swift */; };
 		8EE32A9F21E24ADB00FB3501 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE32A9E21E24ADB00FB3501 /* Button.swift */; };
+		8EE719F821EB69F30012B44E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE719F721EB69F30012B44E /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,7 @@
 		8EE32A9921E23A5E00FB3501 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		8EE32A9C21E23AA000FB3501 /* WaterDropsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDropsView.swift; sourceTree = "<group>"; };
 		8EE32A9E21E24ADB00FB3501 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		8EE719F721EB69F30012B44E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -555,6 +557,7 @@
 		8E70EF5F21D1270A001D6418 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8EE719F621EB696F0012B44E /* Autogeneration */,
 				8E6DEB5621DAA89900AFF109 /* Architecture */,
 				8E6DEB4C21DAA85300AFF109 /* Modules */,
 				8E70EF6521D129AB001D6418 /* Navigation */,
@@ -680,6 +683,14 @@
 			path = Animated;
 			sourceTree = "<group>";
 		};
+		8EE719F621EB696F0012B44E /* Autogeneration */ = {
+			isa = PBXGroup;
+			children = (
+				8EE719F721EB69F30012B44E /* R.generated.swift */,
+			);
+			path = Autogeneration;
+			sourceTree = "<group>";
+		};
 		C333EB0A0E08C6D43025A2D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +708,7 @@
 			buildConfigurationList = 8E6B438A21CFB6C40091A6DC /* Build configuration list for PBXNativeTarget "BetterSleep" */;
 			buildPhases = (
 				B402BE8D825BFF468966FB5C /* [CP] Check Pods Manifest.lock */,
+				8EE719F521EB68DE0012B44E /* R.swift autogeneration */,
 				8E6B437421CFB6C30091A6DC /* Sources */,
 				8E6B437521CFB6C30091A6DC /* Frameworks */,
 				8E6B437621CFB6C30091A6DC /* Resources */,
@@ -758,6 +770,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8EE719F521EB68DE0012B44E /* R.swift autogeneration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R.swift autogeneration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/BetterSleep/PresentationLayer/Autogeneration/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/BetterSleep/PresentationLayer/Autogeneration/R.generated.swift\"\n";
+		};
 		A298D69E0DD8740C74EAD599 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -768,6 +800,7 @@
 				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SPPermission/SPPermission.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
@@ -777,6 +810,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SPPermission.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
@@ -853,6 +887,7 @@
 				8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */,
 				8EE32A9D21E23AA000FB3501 /* WaterDropsView.swift in Sources */,
 				8E35B27721E28C5200B15F4E /* Label.swift in Sources */,
+				8EE719F821EB69F30012B44E /* R.generated.swift in Sources */,
 				8E6DEB5321DAA88200AFF109 /* WelcomeControllerViewModel.swift in Sources */,
 				8E70EF6F21D12ADA001D6418 /* MainAppCoordinator.swift in Sources */,
 				8EE32A9621E20EFA00FB3501 /* UIView+Rounding.swift in Sources */,

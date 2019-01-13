@@ -57,7 +57,7 @@ final class WelcomeOnboardingControllerCommunicator:
             title: page.title,
             description: page.description,
             pageIcon: UIImage(named: page.iconPath) ?? UIImage(),
-            color: page.backgroundColorType.color,
+            color: page.backgroundColor,
             titleColor: .white,
             descriptionColor: .white,
             titleFont: UIFont.systemFont(ofSize: 36), //Font.Nunito.bold.of(size: 36) ?? UIFont.boldSystemFont(ofSize: 36.0),
