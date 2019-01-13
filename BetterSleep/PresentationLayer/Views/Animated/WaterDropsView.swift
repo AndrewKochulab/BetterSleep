@@ -111,6 +111,15 @@ final class WaterDropsView: View {
     // MARK: - Appearance
     
     /// Required : Add water drops animation in view
+    
+    func startAnimationIfNeeded() {
+        guard !isStarted else {
+            return
+        }
+        
+        startAnimation()
+    }
+    
     func startAnimation() {
         isStarted = true
         makeRandomWaterDrops(num: dropNum, direction: direction)

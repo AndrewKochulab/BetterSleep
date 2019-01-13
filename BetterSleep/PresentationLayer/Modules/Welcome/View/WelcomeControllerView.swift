@@ -61,6 +61,10 @@ final class WelcomeControllerView: ControllerView {
         attachContentView()
         attachBottomImageView()
         attachStartButton()
+        
+        welcomeLabel.bounceIn(from: .top, y: 100, duration: 0.7, damping: 0.8)
+        startButton.bounceIn(from: .bottom, y: 400, duration: 0.7, delay: 0.7, damping: 0.8)
+        bottomImageView.bounceIn(from: .bottom, y: 500, duration: 0.7, delay: 0.5, damping: 0.8)
     }
     
     override func configuredContainerView() -> View {
@@ -92,7 +96,7 @@ final class WelcomeControllerView: ControllerView {
     
     private func configuredWelcomeLabel() -> Label {
         let label = Label()
-        label.font = UIFont(name: "AppleSDGothicNeo-Thin", size: 30)!
+        label.font = R.font.sofiaProLight(size: 30)
         label.textColor = #colorLiteral(red: 0.8789252639, green: 0.9116950631, blue: 0.924718082, alpha: 1)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -124,7 +128,7 @@ final class WelcomeControllerView: ControllerView {
             NSAttributedString(
                 string: "START",
                 attributes: [
-                    .font : UIFont(name: "AppleSDGothicNeo-Medium", size: 24)!,
+                    .font : R.font.sofiaProRegular(size: 22)!,
                     .foregroundColor : #colorLiteral(red: 0.02203287371, green: 0.1203582063, blue: 0.1882305741, alpha: 1)
                 ]
             ),
@@ -223,10 +227,7 @@ final class WelcomeControllerView: ControllerView {
     override func startInitialAnimation() {
         super.startInitialAnimation()
         
-        dropsView.startAnimation()
-        welcomeLabel.bounceIn(from: .top, y: 100, duration: 0.7, damping: 0.8)
-        startButton.bounceIn(from: .bottom, y: 400, duration: 0.7, delay: 0.7, damping: 0.8)
-        bottomImageView.bounceIn(from: .bottom, y: 500, duration: 0.7, delay: 0.5, damping: 0.8)
+        dropsView.startAnimationIfNeeded()
     }
     
     override func stopInitialAnimation() {

@@ -57,7 +57,7 @@ final class TrackSleepControllerView: ControllerView {
         attachWelcomeLabel()
         attachContentView()
         
-        headerView.slideIn(from: .top, y: -400, duration: 1.0, delay: 0.4)
+        headerView.slideIn(from: .top, y: -400, duration: 0.7, delay: 0.4)
     }
     
     override func configuredContainerView() -> View {
@@ -134,21 +134,21 @@ final class TrackSleepControllerView: ControllerView {
         headerView.addSubview(welcomeLabel)
         
         welcomeLabel.snp.makeConstraints { maker in
-            maker.left.equalTo(logoImageView.snp.left)
-            maker.right.equalTo(logoImageView.snp.right)
+            maker.left.equalToSuperview().inset(40)
+            maker.right.equalToSuperview().inset(40)
             maker.bottom.equalToSuperview().inset(166)
             maker.height.equalTo(100)
         }
     }
     
     private func attachLogoImageView() {
-        headerView.addSubview(logoImageView)
+        containerView.addSubview(logoImageView)
         
         logoImageView.snp.makeConstraints { maker in
             maker.left.equalToSuperview().inset(40)
             maker.right.equalToSuperview().inset(40)
             maker.height.equalTo(160)
-            maker.bottom.equalToSuperview().inset(52)
+            maker.top.equalToSuperview().inset(188)
         }
     }
     
@@ -168,9 +168,7 @@ final class TrackSleepControllerView: ControllerView {
     override func startInitialAnimation() {
         super.startInitialAnimation()
         
-        if !dropsView.isStarted {
-            dropsView.startAnimation()
-        }
+        dropsView.startAnimationIfNeeded()
     }
     
     override func stopInitialAnimation() {

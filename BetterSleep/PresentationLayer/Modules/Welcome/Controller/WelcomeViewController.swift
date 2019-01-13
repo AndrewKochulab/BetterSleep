@@ -26,6 +26,8 @@ final class WelcomeViewController: ViewController<
         
         rootView.setNeedsLayout()
         rootView.layoutIfNeeded()
+        
+        startInitialAnimation()
     }
     
 
