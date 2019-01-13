@@ -11,7 +11,7 @@ target 'BetterSleep' do
   # UI
   pod 'SnapKit'
   pod 'LTMorphingLabel'
-  pod 'paper-onboarding'
+  pod 'paper-onboarding', :path => './LocalPods/PaperOnboarding'
   pod 'ESTabBarController-swift'
   
   # Dependencies

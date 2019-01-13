@@ -12,7 +12,7 @@ DEPENDENCIES:
   - Dip
   - ESTabBarController-swift
   - LTMorphingLabel
-  - paper-onboarding
+  - paper-onboarding (from `./LocalPods/PaperOnboarding`)
   - SnapKit
   - SPPermission
 
@@ -22,19 +22,22 @@ SPEC REPOS:
     - Dip
     - ESTabBarController-swift
     - LTMorphingLabel
-    - paper-onboarding
     - SnapKit
     - SPPermission
+
+EXTERNAL SOURCES:
+  paper-onboarding:
+    :path: "./LocalPods/PaperOnboarding"
 
 SPEC CHECKSUMS:
   AudioKit: 84f5a444902a74ac32cfe8488e72782792ff2edc
   Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
   LTMorphingLabel: e6047354486aa4ba52d36ccc40be8874b50e1ef1
-  paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
+  paper-onboarding: 25ad70ea8469b57f5aaee1914c2f6a37b996dd87
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SPPermission: f9f1ef0474fe3830e58afd6f7922718060c95345
 
-PODFILE CHECKSUM: aac97663cd98ca6695997bef99b9487d4194cf14
+PODFILE CHECKSUM: 297a6ddcf1237cb56e69a19fa16156c156c9dfc1
 
 COCOAPODS: 1.5.3
