@@ -19,15 +19,6 @@ final class LaunchViewController: ViewController<
     var didFinishAnimation: EmptyClosure?
     
     
-    // MARK: - View lifecycle
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
-    
     // MARK: - View
     // MARK: Configuration
     

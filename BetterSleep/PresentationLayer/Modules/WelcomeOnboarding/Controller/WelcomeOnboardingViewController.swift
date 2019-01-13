@@ -23,15 +23,6 @@ final class WelcomeOnboardingViewController: ViewController<
     var didComplete: EmptyClosure?
     
     
-    // MARK: - View lifecycle
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navController?.setNavigationBarHidden(true, animated: true)
-    }
-    
-    
     // MARK: - View
     // MARK: Configuration
     
