@@ -8,7 +8,9 @@
 
 import UIKit
 
-final class Application {
+final class Application:
+    UIResponder,
+    UIApplicationDelegate {
     
     // MARK: - Properties
     // MARK: Appearance
@@ -23,9 +25,25 @@ final class Application {
     
     // MARK: - Initialization
     
+    override convenience init() {
+        self.init(
+            coordinator: MainAppCoordinator(
+                assembly: .init(),
+                navigationController: NavigationController(
+                    rootViewController: UIViewController(
+                        nibName: nil,
+                        bundle: nil
+                    )
+                )
+            ),
+            window: .init(frame: UIScreen.main.bounds),
+            configuration: MainAppConfiguration()
+        )
+    }
+    
     init(
         coordinator: AppCoordinator,
-        window: UIWindow = .init(frame: UIScreen.main.bounds),
+        window: UIWindow,
         configuration: AppConfiguration
     ) {
         self.coordinator = coordinator
@@ -36,7 +54,7 @@ final class Application {
     
     // MARK: - Appearance
     
-    func configure(using app: UIApplication) {
+    private func configure(using app: UIApplication) {
         window.rootViewController = coordinator.navigationController
         window.makeKeyAndVisible()
         
@@ -55,5 +73,18 @@ final class Application {
     
     private func configureComponents() {
         
+    }
+    
+    
+    // MARK: - UIApplicationDelegate
+    
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?
+    ) -> Bool {
+        configure(using: application)
+        coordinator.start(animated: false)
+        
+        return true
     }
 }

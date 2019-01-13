@@ -38,7 +38,7 @@
 		8E5ADB6C21EB7F4200ED9F1A /* Sofia Pro Extra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5ADB5C21EB7F4200ED9F1A /* Sofia Pro Extra Light.otf */; };
 		8E5ADB6D21EB7F4200ED9F1A /* Sofia Pro Black Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5ADB5D21EB7F4200ED9F1A /* Sofia Pro Black Italic.otf */; };
 		8E5ADB6E21EB7F4200ED9F1A /* Sofia Pro Semi Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E5ADB5E21EB7F4200ED9F1A /* Sofia Pro Semi Bold Italic.otf */; };
-		8E6B437C21CFB6C30091A6DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B437B21CFB6C30091A6DC /* AppDelegate.swift */; };
+		8E5ADB7021EBADF100ED9F1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5ADB6F21EBADF100ED9F1A /* main.swift */; };
 		8E6DEB2E21DAA47600AFF109 /* AppLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DEB2D21DAA47600AFF109 /* AppLink.swift */; };
 		8E6DEB3021DAA47C00AFF109 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DEB2F21DAA47C00AFF109 /* AppConfiguration.swift */; };
 		8E6DEB3221DAA48200AFF109 /* MainAppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DEB3121DAA48200AFF109 /* MainAppConfiguration.swift */; };
@@ -70,7 +70,6 @@
 		8E70EF5C21D12631001D6418 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF5B21D12631001D6418 /* Application.swift */; };
 		8E70EF6421D128FD001D6418 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF6321D128FD001D6418 /* Coordinator.swift */; };
 		8E70EF6721D129B6001D6418 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF6621D129B6001D6418 /* NavigationController.swift */; };
-		8E70EF6A21D12A71001D6418 /* AppDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF6921D12A71001D6418 /* AppDefinition.swift */; };
 		8E70EF6D21D12AC1001D6418 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF6C21D12AC1001D6418 /* AppCoordinator.swift */; };
 		8E70EF6F21D12ADA001D6418 /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70EF6E21D12ADA001D6418 /* MainAppCoordinator.swift */; };
 		8EBE7F5721E0BD4F00A23E59 /* BaseCoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBE7F5621E0BD4F00A23E59 /* BaseCoordinatorAssembly.swift */; };
@@ -116,8 +115,8 @@
 		8E5ADB5C21EB7F4200ED9F1A /* Sofia Pro Extra Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Extra Light.otf"; sourceTree = "<group>"; };
 		8E5ADB5D21EB7F4200ED9F1A /* Sofia Pro Black Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Black Italic.otf"; sourceTree = "<group>"; };
 		8E5ADB5E21EB7F4200ED9F1A /* Sofia Pro Semi Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold Italic.otf"; sourceTree = "<group>"; };
+		8E5ADB6F21EBADF100ED9F1A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../../../main.swift; sourceTree = "<group>"; };
 		8E6B437821CFB6C30091A6DC /* BetterSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetterSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E6B437B21CFB6C30091A6DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E6B438721CFB6C40091A6DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6DEB2D21DAA47600AFF109 /* AppLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLink.swift; sourceTree = "<group>"; };
 		8E6DEB2F21DAA47C00AFF109 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 		8E70EF5B21D12631001D6418 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		8E70EF6321D128FD001D6418 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		8E70EF6621D129B6001D6418 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		8E70EF6921D12A71001D6418 /* AppDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefinition.swift; sourceTree = "<group>"; };
 		8E70EF6C21D12AC1001D6418 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		8E70EF6E21D12ADA001D6418 /* MainAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppCoordinator.swift; sourceTree = "<group>"; };
 		8EBE7F5621E0BD4F00A23E59 /* BaseCoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinatorAssembly.swift; sourceTree = "<group>"; };
@@ -566,8 +564,8 @@
 		8E70EF5421D12540001D6418 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				8E6B437B21CFB6C30091A6DC /* AppDelegate.swift */,
 				8E6B438721CFB6C40091A6DC /* Info.plist */,
+				8E5ADB6F21EBADF100ED9F1A /* main.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -594,7 +592,6 @@
 		8E70EF5D21D12637001D6418 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				8E70EF6921D12A71001D6418 /* AppDefinition.swift */,
 				8E70EF5B21D12631001D6418 /* Application.swift */,
 			);
 			path = App;
@@ -956,7 +953,6 @@
 				8EBE7F5721E0BD4F00A23E59 /* BaseCoordinatorAssembly.swift in Sources */,
 				8E6DEB3921DAA55900AFF109 /* BaseExtendedCoordinator.swift in Sources */,
 				8E6DEB4521DAA64500AFF109 /* BaseNotification.swift in Sources */,
-				8E70EF6A21D12A71001D6418 /* AppDefinition.swift in Sources */,
 				8E35B27D21E2950700B15F4E /* WelcomeOnboardingPage.swift in Sources */,
 				8E6DEB6621DAAFA900AFF109 /* WelcomeControllerView.swift in Sources */,
 				8EBE7F5921E0C22D00A23E59 /* MainAppCoordinatorAssembly.swift in Sources */,
@@ -967,13 +963,13 @@
 				8E6DEB3021DAA47C00AFF109 /* AppConfiguration.swift in Sources */,
 				8E6DEB2E21DAA47600AFF109 /* AppLink.swift in Sources */,
 				8E6DEB7921DAB56C00AFF109 /* DependencyContainer.swift in Sources */,
-				8E6B437C21CFB6C30091A6DC /* AppDelegate.swift in Sources */,
 				8E6DEB8121DAB6F700AFF109 /* DIPComponentScope.swift in Sources */,
 				8E6DEB7E21DAB5D400AFF109 /* DependencyContainerScope.swift in Sources */,
 				8E35B27521E2595800B15F4E /* WelcomeOnboardingCoordinatorAssembly.swift in Sources */,
 				8E6DEB6B21DAB31000AFF109 /* Flow.swift in Sources */,
 				8E6DEB6821DAB13100AFF109 /* Types.swift in Sources */,
 				8E6DEB4221DAA61E00AFF109 /* ObjectNotifiable.swift in Sources */,
+				8E5ADB7021EBADF100ED9F1A /* main.swift in Sources */,
 				8E6DEB6E21DAB33700AFF109 /* BaseFlow.swift in Sources */,
 				8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */,
 				8EE32A9D21E23AA000FB3501 /* WaterDropsView.swift in Sources */,

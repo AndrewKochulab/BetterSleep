@@ -13,7 +13,7 @@ class BaseCoordinator: Coordinator {
     // MARK: - Properties
     // MARK: Content
     
-    unowned let navigationController: NavigationController
+    let navigationController: NavigationController
     
     // MARK: Callbacks
     
