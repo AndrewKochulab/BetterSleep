@@ -12,12 +12,12 @@ class NavigationController: UINavigationController {
     
     // MARK: - Appearance
     
-    func set<View, ViewModel, Controller>(
+    func set<Controller>(
         viewController: Controller,
         animated: Bool = true,
         configuration: ((Controller) -> Void)? = nil,
         completion: @escaping (Controller) -> Void
-    ) where Controller: ViewController<View, ViewModel> {
+    ) where Controller: UIViewController {
         configuration?(viewController)
         
         CATransaction.begin()
@@ -31,12 +31,12 @@ class NavigationController: UINavigationController {
         CATransaction.commit()
     }
     
-    func set<View, ViewModel, Controller>(
+    func set<Controller>(
         viewController: Controller,
         animated: Bool = true,
         configuration: ((Controller) -> Void)? = nil,
         completion: @escaping () -> Void
-    ) where Controller: ViewController<View, ViewModel> {
+    ) where Controller: UIViewController {
         set(
             viewController: viewController,
             animated: animated,
