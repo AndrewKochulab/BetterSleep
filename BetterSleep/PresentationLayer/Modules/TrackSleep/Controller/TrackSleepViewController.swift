@@ -13,4 +13,24 @@ final class TrackSleepViewController: ViewController<
     TrackSleepControllerViewModel
 > {
     
+    // MARK: - View lifecycle
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        rootView.setNeedsLayout()
+        rootView.layoutIfNeeded()
+        
+        startInitialAnimation()
+    }
+    
+    
+    // MARK: - View
+    // MARK: Configuration
+    
+    override func configureView() {
+        super.configureView()
+        
+        rootView.welcomeMessage = "Welcome back to"
+    }
 }

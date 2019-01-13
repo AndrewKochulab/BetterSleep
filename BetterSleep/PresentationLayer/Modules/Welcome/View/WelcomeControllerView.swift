@@ -22,7 +22,6 @@ final class WelcomeControllerView: ControllerView {
         }
     }
     
-    
     // MARK: Callbacks
     
     var didStartTouchUpInside: DidTouchUpInside?
@@ -31,7 +30,6 @@ final class WelcomeControllerView: ControllerView {
     
     private lazy var headerView = configuredHeaderView()
     private lazy var dropsView = configuredDropsView()
-    
     private lazy var welcomeLabel = configuredWelcomeLabel()
     private lazy var logoImageView = configuredLogoImageView()
     

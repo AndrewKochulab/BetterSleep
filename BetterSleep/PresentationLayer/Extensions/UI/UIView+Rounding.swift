@@ -14,7 +14,8 @@ extension UIView {
     
     func round(
         corners: UIRectCorner = .allCorners,
-        radius: Double
+        radius: Double,
+        in bounds: CGRect
     ) {
         let path = UIBezierPath(
             roundedRect: bounds,
@@ -27,6 +28,13 @@ extension UIView {
         maskLayer.path = path.cgPath
         
         layer.mask = maskLayer
+    }
+    
+    func round(
+        corners: UIRectCorner = .allCorners,
+        radius: Double
+    ) {
+        round(corners: corners, radius: radius, in: bounds)
     }
     
     func round(

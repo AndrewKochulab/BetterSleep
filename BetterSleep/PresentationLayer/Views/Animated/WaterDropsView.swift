@@ -49,7 +49,7 @@ final class WaterDropsView: View {
     /// The maximum duration of animation
     public var maxDuration: TimeInterval = 12
     
-    private var isStarted = false
+    var isStarted = false
     
     private var randomDuration: TimeInterval {
         return TimeInterval(arc4random_uniform(UInt32(self.maxDuration - self.minDuration))) + self.minDuration

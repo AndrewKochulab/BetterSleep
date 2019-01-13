@@ -19,13 +19,11 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
     ) {
         // FIXME: Check if user already watched the onboarding
         
-        showLaunchController { [unowned self] in
-            self.showMainFlow(animated: animated, completion: completion)
-        }
+//        self.showMainFlow(animated: animated, completion: completion)
 
-//        showLaunchController { [unowned self] in
-//            self.showWelcomeCoordinator(animated: animated, completion: completion)
-//        }
+        showLaunchController { [unowned self] in
+            self.showWelcomeCoordinator(animated: animated, completion: completion)
+        }
     }
     
     private func showLaunchController(
@@ -70,9 +68,7 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         )
         
         coordinator.didCompleteTutorial = { [unowned self] in
-            self.showLaunchController {
-                self.showMainFlow(animated: false, completion: {})
-            }
+            self.showMainFlow(animated: true, completion: {})
         }
         
         coordinator.didFinish = { [unowned self, unowned coordinator] in
