@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yoG-s8-Q5u">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="TDe-hw-9TV">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yoG-s8-Q5u" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y4R-Y5-xDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rM5-GH-4KG">
+                                <rect key="frame" x="40" y="284" width="334" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="YBb-Wd-QW7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.023529411764705882" green="0.12156862745098039" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rM5-GH-4KG" firstAttribute="top" secondItem="1lt-kE-x53" secondAttribute="top" constant="240" id="3j6-fe-I2e"/>
+                            <constraint firstItem="1lt-kE-x53" firstAttribute="trailing" secondItem="rM5-GH-4KG" secondAttribute="trailing" constant="40" id="9Fl-hM-eaP"/>
+                            <constraint firstItem="rM5-GH-4KG" firstAttribute="leading" secondItem="1lt-kE-x53" secondAttribute="leading" constant="40" id="wKI-5N-XII"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1lt-kE-x53"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vai-bt-WXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="13"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="launch_logo_icon" width="1080" height="540"/>
+    </resources>
+</document>
