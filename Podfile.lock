@@ -1,0 +1,40 @@
+PODS:
+  - AudioKit/Core (4.5.6)
+  - Dip (7.0.1)
+  - ESTabBarController-swift (2.6.4)
+  - LTMorphingLabel (0.5.9)
+  - paper-onboarding (5.0.0)
+  - SnapKit (4.2.0)
+  - SPPermission (2.4.8)
+
+DEPENDENCIES:
+  - AudioKit/Core
+  - Dip
+  - ESTabBarController-swift
+  - LTMorphingLabel
+  - paper-onboarding
+  - SnapKit
+  - SPPermission
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AudioKit
+    - Dip
+    - ESTabBarController-swift
+    - LTMorphingLabel
+    - paper-onboarding
+    - SnapKit
+    - SPPermission
+
+SPEC CHECKSUMS:
+  AudioKit: 84f5a444902a74ac32cfe8488e72782792ff2edc
+  Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
+  ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
+  LTMorphingLabel: e6047354486aa4ba52d36ccc40be8874b50e1ef1
+  paper-onboarding: a2e3a710fd27ac0b5635ec5490660e7ec09289b5
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SPPermission: f9f1ef0474fe3830e58afd6f7922718060c95345
+
+PODFILE CHECKSUM: aac97663cd98ca6695997bef99b9487d4194cf14
+
+COCOAPODS: 1.5.3
