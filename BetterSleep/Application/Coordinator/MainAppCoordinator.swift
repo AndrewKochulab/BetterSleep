@@ -65,6 +65,10 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
             navigationController: navigationController
         )
         
+        coordinator.didCompleteTutorial = { [unowned self] in
+            self.showMainCoordinator(animated: true)
+        }
+        
         coordinator.didFinish = { [unowned self] in
             self.remove(coordinator: coordinator)
         }
@@ -73,4 +77,9 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         coordinator.start(animated: animated)
     }
     
+    private func showMainCoordinator(
+        animated: Bool
+    ) {
+        
+    }
 }

@@ -20,13 +20,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         App.configure(using: application)
         App.coordinator.start(animated: false)
         
-        let dip = DIPDependencyContainer.init()
-        dip.registerDependency(scope: .unique) {
-            UIViewController()
-        }
-        
-        let v: UIViewController = dip.resolve()
-        
         return true
     }
 }

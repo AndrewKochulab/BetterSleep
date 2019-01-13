@@ -55,14 +55,11 @@ extension OnboardingContentViewItem {
                 return
             }
         }
-
-        for attribute in [NSLayoutConstraint.Attribute.centerX, NSLayoutConstraint.Attribute.centerY] {
-            (view, item) >>>- {
-                $0.attribute = attribute
-                return
-            }
+        
+        (view, item) >>>- {
+            $0.attribute = .centerX
         }
-
+        
         return item
     }
 }
@@ -81,13 +78,13 @@ private extension OnboardingContentViewItem {
         titleCenterConstraint = (self, titleLabel, imageView) >>>- {
             $0.attribute = .top
             $0.secondAttribute = .bottom
-            $0.constant = 50
+            $0.constant = 32
             return
         }
         (self, descriptionLabel, titleLabel) >>>- {
             $0.attribute = .top
             $0.secondAttribute = .bottom
-            $0.constant = 10
+            $0.constant = 16
             return
         }
 
@@ -99,6 +96,7 @@ private extension OnboardingContentViewItem {
     func createTitleLabel(_ onView: UIView) -> UILabel {
         let label = Init(createLabel()) {
             $0.font = UIFont(name: "Nunito-Bold", size: 36)
+            $0.numberOfLines = 0
         }
         onView.addSubview(label)
 
@@ -110,12 +108,17 @@ private extension OnboardingContentViewItem {
             return
         }
 
-        for attribute in [NSLayoutConstraint.Attribute.centerX, NSLayoutConstraint.Attribute.leading, NSLayoutConstraint.Attribute.trailing] {
+        (onView, label) >>>- {
+            $0.attribute = .centerX
+        }
+        
+        for (attribute, constant) in [(NSLayoutConstraint.Attribute.leading, 30), (.trailing, -30)] {
             (onView, label) >>>- {
                 $0.attribute = attribute
-                return
+                $0.constant = CGFloat(constant)
             }
         }
+        
         return label
     }
 
@@ -159,7 +162,7 @@ private extension OnboardingContentViewItem {
 
     func createImage(_ onView: UIView) -> UIImageView {
         let imageView = Init(UIImageView(frame: CGRect.zero)) {
-            $0.contentMode = .scaleAspectFit
+            $0.contentMode = .scaleAspectFill
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
 
@@ -168,13 +171,13 @@ private extension OnboardingContentViewItem {
         // add constratints
         informationImageWidthConstraint = imageView >>>- {
             $0.attribute = NSLayoutConstraint.Attribute.width
-            $0.constant = 188
+            $0.constant = UIScreen.main.bounds.width
             return
         }
         
         informationImageHeightConstraint = imageView >>>- {
             $0.attribute = NSLayoutConstraint.Attribute.height
-            $0.constant = 188
+            $0.constant = UIScreen.main.bounds.height / 1.8
             return
         }
 

@@ -39,5 +39,24 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>UIAppFonts</key>
+    <array>
+        <string>Sofia Pro Black Italic.otf</string>
+        <string>Sofia Pro Black.otf</string>
+        <string>Sofia Pro Bold Italic.otf</string>
+        <string>Sofia Pro Bold.otf</string>
+        <string>Sofia Pro Extra Light Italic.otf</string>
+        <string>Sofia Pro Extra Light.otf</string>
+        <string>Sofia Pro Italic.otf</string>
+        <string>Sofia Pro Light Italic.otf</string>
+        <string>Sofia Pro Light.otf</string>
+        <string>Sofia Pro Medium Italic.otf</string>
+        <string>Sofia Pro Medium.otf</string>
+        <string>Sofia Pro Regular.otf</string>
+        <string>Sofia Pro Semi Bold Italic.otf</string>
+        <string>Sofia Pro Semi Bold.otf</string>
+        <string>Sofia Pro Ultra Light Italic.otf</string>
+        <string>Sofia Pro Ultra Light.otf</string>
+    </array>
 </dict>
 </plist>
