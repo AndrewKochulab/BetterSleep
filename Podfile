@@ -20,5 +20,8 @@ target 'BetterSleep' do
   # Permissions
   pod 'SPPermission'
   
+  # Autogeneration
+  pod 'R.swift'
+  
 
 end

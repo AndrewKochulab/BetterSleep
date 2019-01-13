@@ -4,6 +4,9 @@ PODS:
   - ESTabBarController-swift (2.6.4)
   - LTMorphingLabel (0.5.9)
   - paper-onboarding (5.0.0)
+  - R.swift (5.0.0):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.0)
   - SnapKit (4.2.0)
   - SPPermission (2.4.8)
 
@@ -13,6 +16,7 @@ DEPENDENCIES:
   - ESTabBarController-swift
   - LTMorphingLabel
   - paper-onboarding (from `./LocalPods/PaperOnboarding`)
+  - R.swift
   - SnapKit
   - SPPermission
 
@@ -22,6 +26,8 @@ SPEC REPOS:
     - Dip
     - ESTabBarController-swift
     - LTMorphingLabel
+    - R.swift
+    - R.swift.Library
     - SnapKit
     - SPPermission
 
@@ -35,9 +41,11 @@ SPEC CHECKSUMS:
   ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
   LTMorphingLabel: e6047354486aa4ba52d36ccc40be8874b50e1ef1
   paper-onboarding: 25ad70ea8469b57f5aaee1914c2f6a37b996dd87
+  R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
+  R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SPPermission: f9f1ef0474fe3830e58afd6f7922718060c95345
 
-PODFILE CHECKSUM: 297a6ddcf1237cb56e69a19fa16156c156c9dfc1
+PODFILE CHECKSUM: 5f52fe0de2ff11b40451c6ab57a1646fd64dff3a
 
 COCOAPODS: 1.5.3
