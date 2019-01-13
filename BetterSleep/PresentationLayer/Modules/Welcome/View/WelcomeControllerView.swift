@@ -104,7 +104,7 @@ final class WelcomeControllerView: ControllerView {
     
     private func configuredLogoImageView() -> ImageView {
         let imageView = ImageView()
-        imageView.image = #imageLiteral(resourceName: "launch_logo_icon")
+        imageView.image = R.image.launchLogo()
         imageView.contentMode = .scaleAspectFit
         
         return imageView
@@ -138,7 +138,7 @@ final class WelcomeControllerView: ControllerView {
     
     private func configuredBottomImageView() -> ImageView {
         let imageView = ImageView()
-        imageView.image = #imageLiteral(resourceName: "welcome_sleep_icon")
+        imageView.image = R.image.welcomeSleepIcon()
         imageView.contentMode = .scaleAspectFit
         
         return imageView

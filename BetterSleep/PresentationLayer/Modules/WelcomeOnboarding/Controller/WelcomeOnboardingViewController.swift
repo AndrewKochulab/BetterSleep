@@ -18,6 +18,10 @@ final class WelcomeOnboardingViewController: ViewController<
     
     private lazy var onboardingCommunicator = configuredOnboardingCommunicator()
     
+    // MARK: Callbacks
+    
+    var didComplete: EmptyClosure?
+    
     
     // MARK: - View lifecycle
     
@@ -35,25 +39,19 @@ final class WelcomeOnboardingViewController: ViewController<
         super.configureView()
         
         onboardingCommunicator.setupBehaviour()
-        
-        rootView.willShowNextPage = { [unowned self] in
-            self.showNextPage()
-        }
-        
-        rootView.didSkipTutorial = { [unowned self] in
-            
-        }
-        
-        rootView.didFinishTutorial = { [unowned self] in
-            
-        }
     }
     
     private func configuredOnboardingCommunicator() -> WelcomeOnboardingControllerCommunicator {
-        return .init(
+        let communicator = WelcomeOnboardingControllerCommunicator(
             view: rootView.onboardingView,
             viewModel: viewModel
         )
+        
+        communicator.didCompleteTutorial = { [unowned self] in
+            self.didComplete?()
+        }
+        
+        return communicator
     }
     
     

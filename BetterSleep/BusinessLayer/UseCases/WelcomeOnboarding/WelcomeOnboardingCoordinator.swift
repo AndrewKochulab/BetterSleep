@@ -10,6 +10,12 @@ import Foundation
 
 final class WelcomeOnboardingCoordinator: BaseExtendedCoordinator<WelcomeOnboardingCoordinatorAssembly> {
     
+    // MARK: - Properties
+    // MARK: Callbacks
+    
+    var didCompleteTutorial: EmptyClosure?
+    
+    
     // MARK: - Appearance
     
     override func showInitialController(
@@ -19,8 +25,11 @@ final class WelcomeOnboardingCoordinator: BaseExtendedCoordinator<WelcomeOnboard
         navigationController.set(
             viewController: assembly.initialController(),
             animated: animated,
-            configuration: { vc in
-                
+            configuration: { [unowned self] vc in
+                vc.didComplete = {
+                    self.didCompleteTutorial?()
+                    self.stop()
+                }
             },
             completion: completion
         )

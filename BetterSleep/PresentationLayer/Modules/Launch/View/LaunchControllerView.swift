@@ -42,7 +42,7 @@ final class LaunchControllerView: ControllerView {
     
     private func configuredLogoImageView() -> ImageView {
         let imageView = ImageView()
-        imageView.image = #imageLiteral(resourceName: "launch_logo_icon")
+        imageView.image = R.image.launchLogo()
         imageView.contentMode = .scaleAspectFit
         
         return imageView

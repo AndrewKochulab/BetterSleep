@@ -8,15 +8,44 @@
 
 import Foundation
 import paper_onboarding
+import SnapKit
 
 final class WelcomeOnboardingControllerCommunicator:
+    NSObject,
     PaperOnboardingDataSource,
-    PaperOnboardingDelegate {
+    PaperOnboardingDelegate,
+    UIGestureRecognizerDelegate {
     
     // MARK: - Properties
+    // MARK: Content
     
     let view: PaperOnboarding
     let viewModel: WelcomeOnboardingControllerViewModel
+    
+    private lazy var submitButton: Button = {
+        let submitButton = Button()
+        submitButton.layer.cornerRadius = 12
+        submitButton.layer.masksToBounds = true
+        
+        submitButton.setAttributedTitle(
+            NSAttributedString(
+                string: "START",
+                attributes: [
+                    .foregroundColor : #colorLiteral(red: 0.03749443591, green: 0.07931037992, blue: 0.2180866301, alpha: 1),
+                    .font : R.font.sofiaProRegular(size: 22)!
+                ]
+            ),
+            for: .normal
+        )
+        
+        submitButton.backgroundColor = .white
+        
+        return submitButton
+    }()
+    
+    // MARK: Callbacks
+    
+    var didCompleteTutorial: EmptyClosure?
     
     
     // MARK: - Initialization
@@ -42,6 +71,11 @@ final class WelcomeOnboardingControllerCommunicator:
         view.currentIndex(nextPagePosition, animated: animated)
     }
     
+    func finishTutorial() {
+        viewModel.finishTutorial()
+        didCompleteTutorial?()
+    }
+    
     
     // MARK: - PaperOnboardingDataSource
     
@@ -53,15 +87,15 @@ final class WelcomeOnboardingControllerCommunicator:
         let page = viewModel.page(at: index)
         
         return OnboardingItemInfo(
-            informationImage: UIImage(named: page.imagePath) ?? UIImage(),
+            informationImage: page.coverImage,
             title: page.title,
             description: page.description,
-            pageIcon: UIImage(named: page.iconPath) ?? UIImage(),
+            pageIcon: page.thumbnailImage,
             color: page.backgroundColor,
             titleColor: .white,
             descriptionColor: .white,
-            titleFont: UIFont.systemFont(ofSize: 36), //Font.Nunito.bold.of(size: 36) ?? UIFont.boldSystemFont(ofSize: 36.0),
-            descriptionFont: UIFont.systemFont(ofSize: 14)// Font.OpenSans.regular.of(size: 14) ?? UIFont.systemFont(ofSize: 14.0)
+            titleFont: viewModel.titleFont(),
+            descriptionFont: viewModel.descriptionFont()
         )
     }
   
@@ -77,10 +111,46 @@ final class WelcomeOnboardingControllerCommunicator:
     }
     
     func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
+        guard viewModel.isLastPageVisible() else {
+            return
+        }
         
+        view.gestureRecognizers?.first?.delegate = self
+        view.gestureRecognizers?.first?.cancelsTouchesInView = true
+        
+        item.addSubview(submitButton)
+        
+        submitButton.snp.makeConstraints { maker in
+            maker.width.equalTo(220)
+            maker.height.equalTo(50)
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(item.descriptionLabel!.snp.bottom).offset(20)
+        }
     }
     
     var enableTapsOnPageControl: Bool {
         return false
+    }
+    
+    
+    // MARK: - UIGestureRecognizerDelegate
+    
+    func gestureRecognizer(
+        _ gestureRecognizer: UIGestureRecognizer,
+        shouldReceive touch: UITouch
+    ) -> Bool {
+        guard viewModel.isLastPageVisible() else {
+            return true
+        }
+        
+        let location = touch.location(in: nil)
+
+        if submitButton.frame.contains(location) {
+            finishTutorial()
+
+            return false
+        }
+
+        return true
     }
 }

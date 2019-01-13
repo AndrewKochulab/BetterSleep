@@ -14,8 +14,8 @@ struct WelcomeOnboardingPage: Equatable {
     
     let title: String
     let description: String
-    let imagePath: String
-    let iconPath: String
+    let coverImage: UIImage
+    let thumbnailImage: UIImage
     let backgroundColor: UIColor
     
 }

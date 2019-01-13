@@ -12,19 +12,9 @@ import paper_onboarding
 final class WelcomeOnboardingControllerView: ControllerView {
     
     // MARK: - Properties
-    // MARK: Callbacks
-    
-    var willShowNextPage: EmptyClosure?
-    var didSkipTutorial: EmptyClosure?
-    var didFinishTutorial: EmptyClosure?
-    
     // MARK: Views
     
     lazy var onboardingView = configuredOnboardingView()
-    
-    private lazy var nextPageButton = configuredNextPageButton()
-    private lazy var finishTutorialButton = configuredFinishTutorialButton()
-    private lazy var skipTutorialButton = configuredSkipTutorialButton()
     
     
     // MARK: - UI
@@ -34,40 +24,10 @@ final class WelcomeOnboardingControllerView: ControllerView {
         super.configure()
         
         attachOnboardingView()
-        attachNextPageButton()
-        attachFinishTutorialButton()
-        attachSkipTutorialButton()
     }
     
     private func configuredOnboardingView() -> PaperOnboarding {
         return PaperOnboarding()
-    }
-    
-    private func configuredNextPageButton() -> Button {
-        let button = Button()
-        button.didTouchUpInside = { _ in
-            
-        }
-        
-        return button
-    }
-    
-    private func configuredFinishTutorialButton() -> Button {
-        let button = Button()
-        button.didTouchUpInside = { _ in
-            
-        }
-        
-        return button
-    }
-    
-    private func configuredSkipTutorialButton() -> Button {
-        let button = Button()
-        button.didTouchUpInside = { _ in
-            
-        }
-        
-        return button
     }
     
     func setup(
@@ -85,30 +45,6 @@ final class WelcomeOnboardingControllerView: ControllerView {
         
         onboardingView.snp.makeConstraints { maker in
             maker.edges.equalToSuperview()
-        }
-    }
-    
-    private func attachNextPageButton() {
-        containerView.addSubview(nextPageButton)
-        
-        nextPageButton.snp.makeConstraints { maker in
-            
-        }
-    }
-    
-    private func attachFinishTutorialButton() {
-        containerView.addSubview(finishTutorialButton)
-        
-        finishTutorialButton.snp.makeConstraints { maker in
-            
-        }
-    }
-    
-    private func attachSkipTutorialButton() {
-        containerView.addSubview(skipTutorialButton)
-        
-        skipTutorialButton.snp.makeConstraints { maker in
-            
         }
     }
 }
