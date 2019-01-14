@@ -89,7 +89,7 @@ final class TrackSleepControllerView: ControllerView {
     
     private func configuredWelcomeLabel() -> Label {
         let label = Label()
-        label.font = R.font.sofiaProLight(size: 30)
+        label.font = R.font.sofiaProLight(size: 24)
         label.textColor = #colorLiteral(red: 0.8789252639, green: 0.9116950631, blue: 0.924718082, alpha: 1)
         label.textAlignment = .center
         label.numberOfLines = 0
