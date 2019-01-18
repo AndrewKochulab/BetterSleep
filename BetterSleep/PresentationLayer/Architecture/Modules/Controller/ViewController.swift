@@ -28,9 +28,12 @@ class ViewController<View, ViewModel>: UIViewController where
     
     // MARK: - Initialization
     
-    init(viewModel: ViewModel) {
+    init(
+        view: View = .init(),
+        viewModel: ViewModel
+    ) {
         self.viewModel = viewModel
-        self.rootView = View()
+        self.rootView = view
         
         super.init(nibName: nil, bundle: nil)
     }
