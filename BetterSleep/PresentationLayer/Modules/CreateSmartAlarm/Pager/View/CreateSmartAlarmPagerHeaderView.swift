@@ -41,23 +41,12 @@ final class CreateSmartAlarmPagerHeaderView: View {
     private lazy var titleLabel = configuredTitleLabel()
     
 
-    // MARK: - Initialization
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        configure()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        return nil // No needed
-    }
-    
-    
     // MARK: - UI
     // MARK: Configuration
     
-    func configure() {
+    override func configure() {
+        super.configure()
+        
         attachBackButton()
         attachTitleLabel()
     }

@@ -16,9 +16,18 @@ class View: UIView {
         super.init(frame: frame)
         
         backgroundColor = .clear
+        
+        configure()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    
+    // MARK: - Appearance
+    
+    func configure() {
+        
     }
 }

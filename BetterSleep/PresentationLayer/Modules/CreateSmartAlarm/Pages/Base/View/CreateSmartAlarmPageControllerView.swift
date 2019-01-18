@@ -47,6 +47,7 @@ class CreateSmartAlarmPageControllerView: ControllerView {
         label.font = R.font.sofiaProRegular(size: 16)
         label.textColor = #colorLiteral(red: 0.8789252639, green: 0.9116950631, blue: 0.924718082, alpha: 1)
         label.textAlignment = .center
+        label.numberOfLines = 0
         
         return label
     }
@@ -71,7 +72,6 @@ class CreateSmartAlarmPageControllerView: ControllerView {
             maker.left.equalToSuperview().inset(12)
             maker.right.equalToSuperview().inset(12)
             maker.bottom.equalToSuperview().inset(16)
-            maker.height.equalTo(100)
         }
     }
 }
