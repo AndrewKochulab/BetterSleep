@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		70F7233DFEA36616C4914229 /* Pods_BetterSleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */; };
+		8E1064D221ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064D121ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift */; };
+		8E1064D421ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064D321ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift */; };
+		8E1064D621ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064D521ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift */; };
+		8E1064E521ECFD2600A17F96 /* CreateSmartAlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064E421ECFD2600A17F96 /* CreateSmartAlarmViewController.swift */; };
+		8E1064E821ECFD5800A17F96 /* CreateSmartAlarmControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064E721ECFD5800A17F96 /* CreateSmartAlarmControllerViewModel.swift */; };
+		8E1064EB21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064EA21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift */; };
+		8E1064ED21ECFEC900A17F96 /* CreateSmartAlarmPagerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064EC21ECFEC900A17F96 /* CreateSmartAlarmPagerHeaderView.swift */; };
+		8E1064F421ED125200A17F96 /* CreateSmartAlarmPageControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064F321ED125200A17F96 /* CreateSmartAlarmPageControllerView.swift */; };
+		8E1064F621ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064F521ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift */; };
+		8E1064F821ED129400A17F96 /* CreateSmartAlarmPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064F721ED129400A17F96 /* CreateSmartAlarmPageViewController.swift */; };
+		8E1064FA21ED132400A17F96 /* CreateSmartAlarmPagerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1064F921ED132400A17F96 /* CreateSmartAlarmPagerFooterView.swift */; };
+		8E10650921ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10650821ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift */; };
+		8E10650B21ED18DA00A17F96 /* ChooseWakeUpTimeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10650A21ED18DA00A17F96 /* ChooseWakeUpTimeControllerViewModel.swift */; };
+		8E10650D21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10650C21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift */; };
+		8E10650F21ED192900A17F96 /* ChooseWakeUpWindowControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10650E21ED192900A17F96 /* ChooseWakeUpWindowControllerView.swift */; };
+		8E10651121ED194600A17F96 /* ChooseWakeUpWindowControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651021ED194600A17F96 /* ChooseWakeUpWindowControllerViewModel.swift */; };
+		8E10651321ED195A00A17F96 /* ChooseWakeUpWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651221ED195A00A17F96 /* ChooseWakeUpWindowViewController.swift */; };
+		8E10651521ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */; };
+		8E10651721ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651621ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift */; };
+		8E10651921ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651821ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift */; };
 		8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26B21E2543900B15F4E /* WelcomeOnboardingControllerView.swift */; };
 		8E35B26E21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26D21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift */; };
 		8E35B27021E2546200B15F4E /* WelcomeOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26F21E2546200B15F4E /* WelcomeOnboardingViewController.swift */; };
@@ -106,6 +126,26 @@
 /* Begin PBXFileReference section */
 		38BE20C37E1AF34054CA27D4 /* Pods-BetterSleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetterSleep/Pods-BetterSleep.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB6C5D2648B2689D46B7CC9 /* Pods-BetterSleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetterSleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetterSleep/Pods-BetterSleep.release.xcconfig"; sourceTree = "<group>"; };
+		8E1064D121ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmFlow.swift; sourceTree = "<group>"; };
+		8E1064D321ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmFlowAssembly.swift; sourceTree = "<group>"; };
+		8E1064D521ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmFlowContent.swift; sourceTree = "<group>"; };
+		8E1064E421ECFD2600A17F96 /* CreateSmartAlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmViewController.swift; sourceTree = "<group>"; };
+		8E1064E721ECFD5800A17F96 /* CreateSmartAlarmControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmControllerViewModel.swift; sourceTree = "<group>"; };
+		8E1064EA21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmControllerView.swift; sourceTree = "<group>"; };
+		8E1064EC21ECFEC900A17F96 /* CreateSmartAlarmPagerHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmPagerHeaderView.swift; sourceTree = "<group>"; };
+		8E1064F321ED125200A17F96 /* CreateSmartAlarmPageControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmPageControllerView.swift; sourceTree = "<group>"; };
+		8E1064F521ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmPageControllerViewModel.swift; sourceTree = "<group>"; };
+		8E1064F721ED129400A17F96 /* CreateSmartAlarmPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmPageViewController.swift; sourceTree = "<group>"; };
+		8E1064F921ED132400A17F96 /* CreateSmartAlarmPagerFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSmartAlarmPagerFooterView.swift; sourceTree = "<group>"; };
+		8E10650821ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpTimeControllerView.swift; sourceTree = "<group>"; };
+		8E10650A21ED18DA00A17F96 /* ChooseWakeUpTimeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpTimeControllerViewModel.swift; sourceTree = "<group>"; };
+		8E10650C21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpTimeViewController.swift; sourceTree = "<group>"; };
+		8E10650E21ED192900A17F96 /* ChooseWakeUpWindowControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpWindowControllerView.swift; sourceTree = "<group>"; };
+		8E10651021ED194600A17F96 /* ChooseWakeUpWindowControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpWindowControllerViewModel.swift; sourceTree = "<group>"; };
+		8E10651221ED195A00A17F96 /* ChooseWakeUpWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpWindowViewController.swift; sourceTree = "<group>"; };
+		8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeControllerView.swift; sourceTree = "<group>"; };
+		8E10651621ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeControllerViewModel.swift; sourceTree = "<group>"; };
+		8E10651821ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeViewController.swift; sourceTree = "<group>"; };
 		8E35B26B21E2543900B15F4E /* WelcomeOnboardingControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingControllerView.swift; sourceTree = "<group>"; };
 		8E35B26D21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingControllerViewModel.swift; sourceTree = "<group>"; };
 		8E35B26F21E2546200B15F4E /* WelcomeOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +262,208 @@
 				F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E1064D021ECCD1600A17F96 /* CreateSmartAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064D121ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift */,
+				8E1064D521ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift */,
+				8E1064D321ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift */,
+			);
+			path = CreateSmartAlarm;
+			sourceTree = "<group>";
+		};
+		8E1064D721ECCEF900A17F96 /* CreateSmartAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064E221ECFD0E00A17F96 /* Pager */,
+				8E1064EE21ED121B00A17F96 /* Pages */,
+			);
+			path = CreateSmartAlarm;
+			sourceTree = "<group>";
+		};
+		8E1064E221ECFD0E00A17F96 /* Pager */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064E921ECFD6D00A17F96 /* View */,
+				8E1064E621ECFD4500A17F96 /* ViewModel */,
+				8E1064E321ECFD1800A17F96 /* Controller */,
+			);
+			path = Pager;
+			sourceTree = "<group>";
+		};
+		8E1064E321ECFD1800A17F96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064E421ECFD2600A17F96 /* CreateSmartAlarmViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E1064E621ECFD4500A17F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064E721ECFD5800A17F96 /* CreateSmartAlarmControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E1064E921ECFD6D00A17F96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064EA21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift */,
+				8E1064EC21ECFEC900A17F96 /* CreateSmartAlarmPagerHeaderView.swift */,
+				8E1064F921ED132400A17F96 /* CreateSmartAlarmPagerFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E1064EE21ED121B00A17F96 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064EF21ED122500A17F96 /* Base */,
+				8E1064FB21ED181800A17F96 /* ChooseWakeUpTime */,
+				8E1064FC21ED183600A17F96 /* ChooseWakeUpWindow */,
+				8E1064FD21ED184000A17F96 /* ChooseSleepMonitoringType */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		8E1064EF21ED122500A17F96 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064F021ED122A00A17F96 /* View */,
+				8E1064F121ED122F00A17F96 /* ViewModel */,
+				8E1064F221ED123700A17F96 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8E1064F021ED122A00A17F96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064F321ED125200A17F96 /* CreateSmartAlarmPageControllerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E1064F121ED122F00A17F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064F521ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E1064F221ED123700A17F96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E1064F721ED129400A17F96 /* CreateSmartAlarmPageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E1064FB21ED181800A17F96 /* ChooseWakeUpTime */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650121ED187000A17F96 /* View */,
+				8E10650021ED186C00A17F96 /* ViewModel */,
+				8E1064FF21ED186600A17F96 /* Controller */,
+			);
+			path = ChooseWakeUpTime;
+			sourceTree = "<group>";
+		};
+		8E1064FC21ED183600A17F96 /* ChooseWakeUpWindow */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650421ED187A00A17F96 /* View */,
+				8E10650321ED187700A17F96 /* ViewModel */,
+				8E10650221ED187300A17F96 /* Controller */,
+			);
+			path = ChooseWakeUpWindow;
+			sourceTree = "<group>";
+		};
+		8E1064FD21ED184000A17F96 /* ChooseSleepMonitoringType */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650721ED188500A17F96 /* View */,
+				8E10650621ED188100A17F96 /* ViewModel */,
+				8E10650521ED187D00A17F96 /* Controller */,
+			);
+			path = ChooseSleepMonitoringType;
+			sourceTree = "<group>";
+		};
+		8E1064FF21ED186600A17F96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650C21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E10650021ED186C00A17F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650A21ED18DA00A17F96 /* ChooseWakeUpTimeControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E10650121ED187000A17F96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650821ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E10650221ED187300A17F96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E10651221ED195A00A17F96 /* ChooseWakeUpWindowViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E10650321ED187700A17F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E10651021ED194600A17F96 /* ChooseWakeUpWindowControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E10650421ED187A00A17F96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E10650E21ED192900A17F96 /* ChooseWakeUpWindowControllerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E10650521ED187D00A17F96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E10651821ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E10650621ED188100A17F96 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E10651621ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E10650721ED188500A17F96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8E35B26721E2541700B15F4E /* WelcomeOnboarding */ = {
@@ -626,6 +868,7 @@
 				8E5ADB9321EBC6C400ED9F1A /* Statistics */,
 				8E5ADBA221EBC88B00ED9F1A /* TrackSleep */,
 				8E5ADB8921EBC64F00ED9F1A /* Settings */,
+				8E1064D721ECCEF900A17F96 /* CreateSmartAlarm */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -901,6 +1144,7 @@
 				8E5ADB7F21EBC1CF00ED9F1A /* Statistics */,
 				8E5ADB9D21EBC7F100ED9F1A /* TrackSleep */,
 				8E5ADB8421EBC29700ED9F1A /* Settings */,
+				8E1064D021ECCD1600A17F96 /* CreateSmartAlarm */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -1161,9 +1405,15 @@
 				8E5ADB7B21EBB37F00ED9F1A /* MainTabBarController.swift in Sources */,
 				8E6DEB7521DAB4EB00AFF109 /* BaseFlowAssembly.swift in Sources */,
 				8E70EF6421D128FD001D6418 /* Coordinator.swift in Sources */,
+				8E1064D421ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift in Sources */,
 				8E6DEB3421DAA53100AFF109 /* ExtendedCoordinator.swift in Sources */,
+				8E10651121ED194600A17F96 /* ChooseWakeUpWindowControllerViewModel.swift in Sources */,
+				8E1064ED21ECFEC900A17F96 /* CreateSmartAlarmPagerHeaderView.swift in Sources */,
+				8E1064F421ED125200A17F96 /* CreateSmartAlarmPageControllerView.swift in Sources */,
 				8E5ADB9F21EBC7FE00ED9F1A /* TrackSleepCoordinator.swift in Sources */,
 				8E35B27F21E3840600B15F4E /* ImageView.swift in Sources */,
+				8E10650B21ED18DA00A17F96 /* ChooseWakeUpTimeControllerViewModel.swift in Sources */,
+				8E1064FA21ED132400A17F96 /* CreateSmartAlarmPagerFooterView.swift in Sources */,
 				8E6DEB3C21DAA57500AFF109 /* Functions.swift in Sources */,
 				8E35B26E21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift in Sources */,
 				8E5ADBA621EBC89E00ED9F1A /* TrackSleepViewController.swift in Sources */,
@@ -1187,6 +1437,8 @@
 				8E5ADB7E21EBB3BC00ED9F1A /* MainTabBarControllerViewModel.swift in Sources */,
 				8E5ADB8621EBC2A300ED9F1A /* SettingsCoordinator.swift in Sources */,
 				8E35B27D21E2950700B15F4E /* WelcomeOnboardingPage.swift in Sources */,
+				8E1064D221ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift in Sources */,
+				8E10650921ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift in Sources */,
 				8E6DEB6621DAAFA900AFF109 /* WelcomeControllerView.swift in Sources */,
 				8EBE7F5921E0C22D00A23E59 /* MainAppCoordinatorAssembly.swift in Sources */,
 				8E5ADBA121EBC80700ED9F1A /* TrackSleepCoordinatorAssembly.swift in Sources */,
@@ -1200,19 +1452,28 @@
 				8E5ADB9221EBC6A400ED9F1A /* SettingsViewController.swift in Sources */,
 				8E5ADB7521EBB14900ED9F1A /* MainFlowAssembly.swift in Sources */,
 				8E6DEB2E21DAA47600AFF109 /* AppLink.swift in Sources */,
+				8E1064E821ECFD5800A17F96 /* CreateSmartAlarmControllerViewModel.swift in Sources */,
+				8E1064E521ECFD2600A17F96 /* CreateSmartAlarmViewController.swift in Sources */,
+				8E1064EB21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift in Sources */,
 				8E5ADB9021EBC69200ED9F1A /* SettingsControllerViewModel.swift in Sources */,
 				8E6DEB7921DAB56C00AFF109 /* DependencyContainer.swift in Sources */,
 				8E5ADBAE21EBCFF700ED9F1A /* TabBarItemBounceEffectView.swift in Sources */,
 				8E6DEB8121DAB6F700AFF109 /* DIPComponentScope.swift in Sources */,
 				8E6DEB7E21DAB5D400AFF109 /* DependencyContainerScope.swift in Sources */,
+				8E10651321ED195A00A17F96 /* ChooseWakeUpWindowViewController.swift in Sources */,
 				8E35B27521E2595800B15F4E /* WelcomeOnboardingCoordinatorAssembly.swift in Sources */,
 				8E6DEB6B21DAB31000AFF109 /* Flow.swift in Sources */,
 				8E5ADBA421EBC89800ED9F1A /* TrackSleepControllerView.swift in Sources */,
+				8E1064F821ED129400A17F96 /* CreateSmartAlarmPageViewController.swift in Sources */,
+				8E10651521ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift in Sources */,
 				8E6DEB6821DAB13100AFF109 /* Types.swift in Sources */,
+				8E10650F21ED192900A17F96 /* ChooseWakeUpWindowControllerView.swift in Sources */,
 				8E6DEB4221DAA61E00AFF109 /* ObjectNotifiable.swift in Sources */,
 				8E5ADB9821EBC6E900ED9F1A /* StatisticsControllerView.swift in Sources */,
 				8E5ADB8321EBC1E900ED9F1A /* StatisticsCoordinatorAssembly.swift in Sources */,
 				8E5ADB7021EBADF100ED9F1A /* main.swift in Sources */,
+				8E10650D21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift in Sources */,
+				8E10651721ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift in Sources */,
 				8E6DEB6E21DAB33700AFF109 /* BaseFlow.swift in Sources */,
 				8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */,
 				8EE32A9D21E23AA000FB3501 /* WaterDropsView.swift in Sources */,
@@ -1220,6 +1481,8 @@
 				8EE719F821EB69F30012B44E /* R.generated.swift in Sources */,
 				8E6DEB5321DAA88200AFF109 /* WelcomeControllerViewModel.swift in Sources */,
 				8E70EF6F21D12ADA001D6418 /* MainAppCoordinator.swift in Sources */,
+				8E10651921ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift in Sources */,
+				8E1064F621ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift in Sources */,
 				8EE32A9621E20EFA00FB3501 /* UIView+Rounding.swift in Sources */,
 				8E5ADB9A21EBC6FF00ED9F1A /* StatisticsControllerViewModel.swift in Sources */,
 				8E35B27321E2594C00B15F4E /* WelcomeOnboardingCoordinator.swift in Sources */,
@@ -1231,6 +1494,7 @@
 				8E70EF5C21D12631001D6418 /* Application.swift in Sources */,
 				8E35B27A21E292CB00B15F4E /* WelcomeOnboardingControllerCommunicator.swift in Sources */,
 				8E5ADB7321EBB13300ED9F1A /* MainFlow.swift in Sources */,
+				8E1064D621ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift in Sources */,
 				8E70EF6D21D12AC1001D6418 /* AppCoordinator.swift in Sources */,
 				8E6DEB3221DAA48200AFF109 /* MainAppConfiguration.swift in Sources */,
 			);

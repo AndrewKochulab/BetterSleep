@@ -32,7 +32,7 @@ final class MainAppCoordinator: BaseExtendedCoordinator<MainAppCoordinatorAssemb
         didFinishAnimation: @escaping () -> Void
     ) {
         navigationController.set(
-            viewController: assembly.launchController(),
+            controller: assembly.launchController(),
             animated: false,
             configuration: { controller in
                 controller.didFinishAnimation = didFinishAnimation

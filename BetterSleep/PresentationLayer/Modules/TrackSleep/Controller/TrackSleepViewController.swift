@@ -13,6 +13,12 @@ final class TrackSleepViewController: ViewController<
     TrackSleepControllerViewModel
 > {
     
+    // MARK: - Properties
+    // MARK: Callbacks
+    
+    var willCreateSmartAlarm: EmptyClosure?
+    
+    
     // MARK: - View lifecycle
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,5 +38,8 @@ final class TrackSleepViewController: ViewController<
         super.configureView()
         
         rootView.welcomeMessage = "Welcome back to"
+        rootView.willCreateSmartAlarm = { [unowned self] in
+            self.willCreateSmartAlarm?()
+        }
     }
 }

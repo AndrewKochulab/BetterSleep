@@ -22,6 +22,10 @@ final class TrackSleepControllerView: ControllerView {
         }
     }
     
+    // MARK: Callbacks
+    
+    var willCreateSmartAlarm: EmptyClosure?
+    
     // MARK: Views
     
     private lazy var headerView = configuredHeaderView()
@@ -30,6 +34,7 @@ final class TrackSleepControllerView: ControllerView {
     private lazy var logoImageView = configuredLogoImageView()
     
     private lazy var contentView = configuredContentView()
+    private lazy var alarmButton = configuredAlarmButton()
     
     
     // MARK: - View lifecycle
@@ -56,8 +61,10 @@ final class TrackSleepControllerView: ControllerView {
         attachLogoImageView()
         attachWelcomeLabel()
         attachContentView()
+        attachAlarmButton()
         
         headerView.slideIn(from: .top, y: -400, duration: 0.7, delay: 0.4)
+        contentView.slideIn(from: .bottom, y: 400, duration: 0.7, delay: 0.4)
     }
     
     override func configuredContainerView() -> View {
@@ -107,6 +114,31 @@ final class TrackSleepControllerView: ControllerView {
     
     private func configuredContentView() -> View {
         return .init()
+    }
+    
+    private func configuredAlarmButton() -> Button {
+        let button = Button()
+        button.didTouchUpInside = { [unowned self] _ in
+            self.willCreateSmartAlarm?()
+        }
+
+        button.layer.cornerRadius = 12
+        button.layer.masksToBounds = true
+        
+        button.setAttributedTitle(
+            NSAttributedString(
+                string: "Create Alarm",
+                attributes: [
+                    .foregroundColor : UIColor.white,
+                    .font : R.font.sofiaProRegular(size: 22)!
+                ]
+            ),
+            for: .normal
+        )
+        
+        button.backgroundColor = UIColor(red: 22.0 / 255.0, green: 160.0 / 255.0, blue: 133.0 / 255.0, alpha: 1.0)
+        
+        return button
     }
     
     // MARK: Attachments
@@ -160,6 +192,16 @@ final class TrackSleepControllerView: ControllerView {
             maker.left.equalToSuperview()
             maker.right.equalToSuperview()
             maker.bottom.equalToSuperview()
+        }
+    }
+    
+    private func attachAlarmButton() {
+        contentView.addSubview(alarmButton)
+        
+        alarmButton.snp.makeConstraints { maker in
+            maker.width.equalTo(240)
+            maker.height.equalTo(50)
+            maker.center.equalToSuperview()
         }
     }
     
