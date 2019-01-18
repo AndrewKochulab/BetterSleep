@@ -1,4 +1,5 @@
 PODS:
+  - AGCircularPicker (0.1.8)
   - AudioKit/Core (4.5.6)
   - Dip (7.0.1)
   - ESTabBarController-swift (2.6.4)
@@ -12,6 +13,7 @@ PODS:
   - SPPermission (2.4.8)
 
 DEPENDENCIES:
+  - AGCircularPicker (from `./LocalPods/AGCircularPicker`)
   - AudioKit/Core
   - Dip
   - ESTabBarController-swift
@@ -35,10 +37,13 @@ SPEC REPOS:
     - SPPermission
 
 EXTERNAL SOURCES:
+  AGCircularPicker:
+    :path: "./LocalPods/AGCircularPicker"
   paper-onboarding:
     :path: "./LocalPods/PaperOnboarding"
 
 SPEC CHECKSUMS:
+  AGCircularPicker: aaf1ce3a3be451f6378437915b783efa3f177ab4
   AudioKit: 84f5a444902a74ac32cfe8488e72782792ff2edc
   Dip: 79509d5dc4f648e10e922ed79c608a7761c52b13
   ESTabBarController-swift: 58cca4ab7de980657d99a02181c1ff310983e975
@@ -50,6 +55,6 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SPPermission: f9f1ef0474fe3830e58afd6f7922718060c95345
 
-PODFILE CHECKSUM: 97abb68aeb4f6225f9d30de8a8ec805d6270b125
+PODFILE CHECKSUM: 27f87a7d798cd241ef2906a6ecfee5c87a4c935e
 
 COCOAPODS: 1.5.3

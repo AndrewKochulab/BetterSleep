@@ -28,6 +28,9 @@
 		8E10651521ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */; };
 		8E10651721ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651621ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift */; };
 		8E10651921ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E10651821ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift */; };
+		8E357D1021F2659000EBD98A /* ChooseAlarmTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E357D0F21F2659000EBD98A /* ChooseAlarmTimePickerView.swift */; };
+		8E357D1421F2688A00EBD98A /* AlarmTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E357D1321F2688A00EBD98A /* AlarmTime.swift */; };
+		8E357D1821F269D700EBD98A /* UIColor+Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E357D1721F269D700EBD98A /* UIColor+Initialization.swift */; };
 		8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26B21E2543900B15F4E /* WelcomeOnboardingControllerView.swift */; };
 		8E35B26E21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26D21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift */; };
 		8E35B27021E2546200B15F4E /* WelcomeOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E35B26F21E2546200B15F4E /* WelcomeOnboardingViewController.swift */; };
@@ -146,6 +149,9 @@
 		8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeControllerView.swift; sourceTree = "<group>"; };
 		8E10651621ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeControllerViewModel.swift; sourceTree = "<group>"; };
 		8E10651821ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseSleepMonitoringTypeViewController.swift; sourceTree = "<group>"; };
+		8E357D0F21F2659000EBD98A /* ChooseAlarmTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAlarmTimePickerView.swift; sourceTree = "<group>"; };
+		8E357D1321F2688A00EBD98A /* AlarmTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTime.swift; sourceTree = "<group>"; };
+		8E357D1721F269D700EBD98A /* UIColor+Initialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Initialization.swift"; sourceTree = "<group>"; };
 		8E35B26B21E2543900B15F4E /* WelcomeOnboardingControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingControllerView.swift; sourceTree = "<group>"; };
 		8E35B26D21E2544E00B15F4E /* WelcomeOnboardingControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingControllerViewModel.swift; sourceTree = "<group>"; };
 		8E35B26F21E2546200B15F4E /* WelcomeOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeOnboardingViewController.swift; sourceTree = "<group>"; };
@@ -464,6 +470,55 @@
 				8E10651421ED19A600A17F96 /* ChooseSleepMonitoringTypeControllerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8E357D0D21F2656D00EBD98A /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				8E357D0E21F2657600EBD98A /* ChooseAlarmTimePickerView */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		8E357D0E21F2657600EBD98A /* ChooseAlarmTimePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8E357D0F21F2659000EBD98A /* ChooseAlarmTimePickerView.swift */,
+			);
+			path = ChooseAlarmTimePickerView;
+			sourceTree = "<group>";
+		};
+		8E357D1121F2687200EBD98A /* Datatypes */ = {
+			isa = PBXGroup;
+			children = (
+				8E357D1221F2687A00EBD98A /* Alarm */,
+			);
+			path = Datatypes;
+			sourceTree = "<group>";
+		};
+		8E357D1221F2687A00EBD98A /* Alarm */ = {
+			isa = PBXGroup;
+			children = (
+				8E357D1321F2688A00EBD98A /* AlarmTime.swift */,
+			);
+			path = Alarm;
+			sourceTree = "<group>";
+		};
+		8E357D1521F269C600EBD98A /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				8EE32A9021E206F000FB3501 /* UIView+Animation.swift */,
+				8EE32A9521E20EFA00FB3501 /* UIView+Rounding.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		8E357D1621F269CC00EBD98A /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				8E357D1721F269D700EBD98A /* UIColor+Initialization.swift */,
+			);
+			path = UIColor;
 			sourceTree = "<group>";
 		};
 		8E35B26721E2541700B15F4E /* WelcomeOnboarding */ = {
@@ -1086,6 +1141,7 @@
 		8E70EF6021D12712001D6418 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				8E357D1121F2687200EBD98A /* Datatypes */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -1169,8 +1225,8 @@
 		8EE32A8F21E206CA00FB3501 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				8EE32A9021E206F000FB3501 /* UIView+Animation.swift */,
-				8EE32A9521E20EFA00FB3501 /* UIView+Rounding.swift */,
+				8E357D1621F269CC00EBD98A /* UIColor */,
+				8E357D1521F269C600EBD98A /* UIView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -1180,6 +1236,7 @@
 			children = (
 				8EE32A9821E23A5400FB3501 /* Base */,
 				8EE32A9B21E23A6800FB3501 /* Animated */,
+				8E357D0D21F2656D00EBD98A /* Pickers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1352,6 +1409,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BetterSleep/Pods-BetterSleep-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AGCircularPicker/AGCircularPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/Dip/Dip.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
@@ -1363,6 +1421,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AGCircularPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
@@ -1435,6 +1494,7 @@
 				8E6DEB4521DAA64500AFF109 /* BaseNotification.swift in Sources */,
 				8E5ADB8121EBC1DB00ED9F1A /* StatisticsCoordinator.swift in Sources */,
 				8E5ADB7E21EBB3BC00ED9F1A /* MainTabBarControllerViewModel.swift in Sources */,
+				8E357D1421F2688A00EBD98A /* AlarmTime.swift in Sources */,
 				8E5ADB8621EBC2A300ED9F1A /* SettingsCoordinator.swift in Sources */,
 				8E35B27D21E2950700B15F4E /* WelcomeOnboardingPage.swift in Sources */,
 				8E1064D221ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift in Sources */,
@@ -1456,6 +1516,7 @@
 				8E1064E521ECFD2600A17F96 /* CreateSmartAlarmViewController.swift in Sources */,
 				8E1064EB21ECFD7200A17F96 /* CreateSmartAlarmControllerView.swift in Sources */,
 				8E5ADB9021EBC69200ED9F1A /* SettingsControllerViewModel.swift in Sources */,
+				8E357D1821F269D700EBD98A /* UIColor+Initialization.swift in Sources */,
 				8E6DEB7921DAB56C00AFF109 /* DependencyContainer.swift in Sources */,
 				8E5ADBAE21EBCFF700ED9F1A /* TabBarItemBounceEffectView.swift in Sources */,
 				8E6DEB8121DAB6F700AFF109 /* DIPComponentScope.swift in Sources */,
@@ -1482,6 +1543,7 @@
 				8E6DEB5321DAA88200AFF109 /* WelcomeControllerViewModel.swift in Sources */,
 				8E70EF6F21D12ADA001D6418 /* MainAppCoordinator.swift in Sources */,
 				8E10651921ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift in Sources */,
+				8E357D1021F2659000EBD98A /* ChooseAlarmTimePickerView.swift in Sources */,
 				8E1064F621ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift in Sources */,
 				8EE32A9621E20EFA00FB3501 /* UIView+Rounding.swift in Sources */,
 				8E5ADB9A21EBC6FF00ED9F1A /* StatisticsControllerViewModel.swift in Sources */,

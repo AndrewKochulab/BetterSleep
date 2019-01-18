@@ -12,6 +12,7 @@ target 'BetterSleep' do
   pod 'SnapKit'
   pod 'LTMorphingLabel'
   pod 'paper-onboarding', :path => './LocalPods/PaperOnboarding'
+  pod 'AGCircularPicker', :path => './LocalPods/AGCircularPicker'
   pod 'ESTabBarController-swift'
   pod 'lottie-ios'
   
