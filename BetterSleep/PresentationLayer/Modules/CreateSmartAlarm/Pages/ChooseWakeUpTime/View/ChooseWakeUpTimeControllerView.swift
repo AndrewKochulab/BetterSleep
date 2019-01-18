@@ -96,4 +96,14 @@ final class ChooseWakeUpTimeControllerView: CreateSmartAlarmPageControllerView {
         
         timeLabel.attributedText = attributedString
     }
+    
+    // MARK: Animation
+    
+    override func startInitialAnimation() {
+        super.startInitialAnimation()
+        
+        timeLabel.fadeIn(duration: 0.5)
+        pickerView.popIn(fromScale: 0.75, duration: 0.5, delay: 0.3)
+        descriptionLabel.fadeIn(duration: 0.5, delay: 0.5)
+    }
 }
