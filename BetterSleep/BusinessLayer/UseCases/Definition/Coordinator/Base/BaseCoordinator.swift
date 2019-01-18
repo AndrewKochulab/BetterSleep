@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BaseCoordinator: Coordinator {
+class BaseCoordinator: NSObject, Coordinator {
     
     // MARK: - Properties
     // MARK: Content

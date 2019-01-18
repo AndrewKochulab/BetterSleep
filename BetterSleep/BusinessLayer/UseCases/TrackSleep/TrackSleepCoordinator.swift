@@ -19,10 +19,30 @@ final class TrackSleepCoordinator: BaseExtendedCoordinator<
         completion: @escaping () -> Void
     ) {
         navigationController.set(
-            viewController: assembly.initialController(),
+            controller: assembly.initialController(),
             animated: animated,
+            configuration: { vc in
+                vc.willCreateSmartAlarm = { [unowned self] in
+                    self.showCreateSmartAlarmFlow(animated: false)
+                }
+            },
             completion: completion
         )
+    }
+    
+    private func showCreateSmartAlarmFlow(
+        animated: Bool
+    ) {
+        let flow = assembly.createSmartAlarmFlow(
+            navigationController: navigationController
+        )
+        
+        flow.didFinish = { [unowned self, unowned flow] in
+            self.remove(coordinator: flow)
+        }
+        
+        add(coordinator: flow)
+        flow.start(animated: animated)
     }
     
 }

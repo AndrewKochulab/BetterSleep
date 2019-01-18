@@ -23,7 +23,7 @@ final class WelcomeCoordinator: BaseExtendedCoordinator<WelcomeCoordinatorAssemb
         completion: @escaping () -> Void
     ) {
         navigationController.set(
-            viewController: assembly.initialController(),
+            controller: assembly.initialController(),
             animated: animated,
             configuration: { [unowned self] vc in
                 vc.didStartExploringOnboarding = { [unowned self] in

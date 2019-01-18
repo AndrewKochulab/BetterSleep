@@ -20,4 +20,16 @@ final class TrackSleepCoordinatorAssembly: BaseCoordinatorAssembly {
         )
     }
     
+    func createSmartAlarmFlow(
+        content: CreateSmartAlarmFlowContent = .init(),
+        assembly: CreateSmartAlarmFlowAssembly = .init(),
+        navigationController: NavigationController
+    ) -> CreateSmartAlarmFlow {
+        return .init(
+            content: content,
+            assembly: assembly,
+            navigationController: navigationController
+        )
+    }
+    
 }

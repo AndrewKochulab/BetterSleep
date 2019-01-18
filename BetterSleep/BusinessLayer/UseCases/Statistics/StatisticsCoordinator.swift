@@ -19,7 +19,7 @@ final class StatisticsCoordinator: BaseExtendedCoordinator<
         completion: @escaping () -> Void
     ) {
         navigationController.set(
-            viewController: assembly.initialController(),
+            controller: assembly.initialController(),
             animated: animated,
             completion: completion
         )

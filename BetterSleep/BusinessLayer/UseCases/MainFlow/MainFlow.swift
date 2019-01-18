@@ -83,7 +83,7 @@ final class MainFlow: BaseFlow<
         coordinators.forEach { $0.start() }
         
         navigationController.set(
-            viewController: tabBarController,
+            controller: tabBarController,
             animated: animated,
             completion: completion
         )
