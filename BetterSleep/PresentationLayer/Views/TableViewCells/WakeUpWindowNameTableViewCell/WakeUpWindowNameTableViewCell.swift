@@ -47,10 +47,12 @@ final class WakeUpWindowNameTableViewCell: TableViewCell {
         _ selected: Bool,
         animated: Bool
     ) {
+        super.setSelected(selected, animated: animated)
+        
         titleLabel.textColor = selected
             ? selectedTitleColor
             : titleColor
-        
+
         containerView.backgroundColor = selected
             ? titleColor
             : selectedTitleColor
@@ -60,6 +62,12 @@ final class WakeUpWindowNameTableViewCell: TableViewCell {
         _ highlighted: Bool,
         animated: Bool
     ) {
+        super.setHighlighted(highlighted, animated: animated)
+        
+        if isSelected {
+            return
+        }
+        
         UIView.animate(withDuration: 0.2) {
             self.titleLabel.textColor = highlighted
                 ? self.selectedTitleColor

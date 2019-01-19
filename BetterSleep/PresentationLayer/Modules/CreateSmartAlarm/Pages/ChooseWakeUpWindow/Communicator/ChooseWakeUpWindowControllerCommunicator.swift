@@ -49,6 +49,7 @@ final class ChooseWakeUpWindowControllerCommunicator:
         
         let window = viewModel.window(at: indexPath.row)
         cell.title = window.name
+        cell.isSelected = window == viewModel.selectedWindow
         
         return cell
     }

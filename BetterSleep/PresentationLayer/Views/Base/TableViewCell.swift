@@ -32,11 +32,23 @@ class TableViewCell: UITableViewCell {
     }
     
     
+    // MARK: - View lifecycle
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        isSelected = false
+        isHighlighted = false
+    }
+    
+    
     // MARK: - UI
     // MARK: Configuration
     
     func configure() {
         backgroundColor = .clear
+        selectedBackgroundView = UIView()
+        selectionStyle = .none
         
         attachContainerView()
     }
