@@ -129,6 +129,9 @@
 		8EECF9E221F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */; };
 		8EECF9E421F3349C002BBED5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E321F3349C002BBED5 /* TableViewCell.swift */; };
 		8EECF9E621F3363D002BBED5 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E521F3363D002BBED5 /* TableView.swift */; };
+		8EECF9EB21F35125002BBED5 /* MonitoringTypeSelectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EA21F35125002BBED5 /* MonitoringTypeSelectionControl.swift */; };
+		8EECF9ED21F353EF002BBED5 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EC21F353EF002BBED5 /* Control.swift */; };
+		8EECF9EF21F3566F002BBED5 /* MonitoringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EE21F3566F002BBED5 /* MonitoringType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -257,6 +260,9 @@
 		8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpWindowNameTableViewCell.swift; sourceTree = "<group>"; };
 		8EECF9E321F3349C002BBED5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8EECF9E521F3363D002BBED5 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		8EECF9EA21F35125002BBED5 /* MonitoringTypeSelectionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringTypeSelectionControl.swift; sourceTree = "<group>"; };
+		8EECF9EC21F353EF002BBED5 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		8EECF9EE21F3566F002BBED5 /* MonitoringType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringType.swift; sourceTree = "<group>"; };
 		F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -512,6 +518,7 @@
 			children = (
 				8E357D1321F2688A00EBD98A /* AlarmTime.swift */,
 				8EECF9DD21F33022002BBED5 /* WakeUpWindow.swift */,
+				8EECF9EE21F3566F002BBED5 /* MonitoringType.swift */,
 			);
 			path = Alarm;
 			sourceTree = "<group>";
@@ -1250,6 +1257,7 @@
 				8EE32A9B21E23A6800FB3501 /* Animated */,
 				8E357D0D21F2656D00EBD98A /* Pickers */,
 				8EECF9DF21F3346C002BBED5 /* TableViewCells */,
+				8EECF9E821F34F1F002BBED5 /* Selection */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1259,6 +1267,7 @@
 			children = (
 				8EE32A9921E23A5E00FB3501 /* View.swift */,
 				8EE32A9E21E24ADB00FB3501 /* Button.swift */,
+				8EECF9EC21F353EF002BBED5 /* Control.swift */,
 				8E35B27621E28C5200B15F4E /* Label.swift */,
 				8E35B27E21E3840600B15F4E /* ImageView.swift */,
 				8EECF9E321F3349C002BBED5 /* TableViewCell.swift */,
@@ -1305,6 +1314,22 @@
 				8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */,
 			);
 			path = WakeUpWindowNameTableViewCell;
+			sourceTree = "<group>";
+		};
+		8EECF9E821F34F1F002BBED5 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9E921F350F0002BBED5 /* MonitoringTypeSelectionControl */,
+			);
+			path = Selection;
+			sourceTree = "<group>";
+		};
+		8EECF9E921F350F0002BBED5 /* MonitoringTypeSelectionControl */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9EA21F35125002BBED5 /* MonitoringTypeSelectionControl.swift */,
+			);
+			path = MonitoringTypeSelectionControl;
 			sourceTree = "<group>";
 		};
 		C333EB0A0E08C6D43025A2D1 /* Pods */ = {
@@ -1502,6 +1527,7 @@
 			files = (
 				8E5ADB7B21EBB37F00ED9F1A /* MainTabBarController.swift in Sources */,
 				8E6DEB7521DAB4EB00AFF109 /* BaseFlowAssembly.swift in Sources */,
+				8EECF9ED21F353EF002BBED5 /* Control.swift in Sources */,
 				8EECF9DE21F33022002BBED5 /* WakeUpWindow.swift in Sources */,
 				8E70EF6421D128FD001D6418 /* Coordinator.swift in Sources */,
 				8E1064D421ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift in Sources */,
@@ -1523,6 +1549,7 @@
 				8E6DEB4021DAA5FC00AFF109 /* Notifiable.swift in Sources */,
 				8EE32A9A21E23A5E00FB3501 /* View.swift in Sources */,
 				8E6DEB7C21DAB59000AFF109 /* DIPDependencyContainer.swift in Sources */,
+				8EECF9EB21F35125002BBED5 /* MonitoringTypeSelectionControl.swift in Sources */,
 				8E6DEB6321DAAE9200AFF109 /* ControllerViewModel.swift in Sources */,
 				8E5ADB8821EBC2A800ED9F1A /* SettingsCoordinatorAssembly.swift in Sources */,
 				8EE32A9F21E24ADB00FB3501 /* Button.swift in Sources */,
@@ -1585,6 +1612,7 @@
 				8E6DEB5321DAA88200AFF109 /* WelcomeControllerViewModel.swift in Sources */,
 				8E70EF6F21D12ADA001D6418 /* MainAppCoordinator.swift in Sources */,
 				8E10651921ED19D000A17F96 /* ChooseSleepMonitoringTypeViewController.swift in Sources */,
+				8EECF9EF21F3566F002BBED5 /* MonitoringType.swift in Sources */,
 				8E357D1021F2659000EBD98A /* ChooseAlarmTimePickerView.swift in Sources */,
 				8E1064F621ED127F00A17F96 /* CreateSmartAlarmPageControllerViewModel.swift in Sources */,
 				8EE32A9621E20EFA00FB3501 /* UIView+Rounding.swift in Sources */,

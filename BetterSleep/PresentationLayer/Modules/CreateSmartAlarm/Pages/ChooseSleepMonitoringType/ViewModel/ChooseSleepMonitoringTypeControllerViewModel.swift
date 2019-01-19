@@ -17,7 +17,7 @@ final class ChooseSleepMonitoringTypeControllerViewModel: CreateSmartAlarmPageCo
     }
     
     override var pageDescription: String {
-        return ""
+        return "Please select a measure, which will monitor your sleep and estimates the best time to wake up. You could select multiple items to provide the highest estimation."
     }
     
 }
