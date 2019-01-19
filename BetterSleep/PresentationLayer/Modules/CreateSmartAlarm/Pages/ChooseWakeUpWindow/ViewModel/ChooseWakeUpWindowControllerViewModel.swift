@@ -17,7 +17,21 @@ final class ChooseWakeUpWindowControllerViewModel: CreateSmartAlarmPageControlle
     }
     
     override var pageDescription: String {
-        return ""
+        return "Please choose your alarm window and we will wake up you in the best possible moment, during your current sleep cycle."
+    }
+    
+    private lazy var windows = WakeUpWindow.Value.allCases
+    var selectedWindow: WakeUpWindow.Value?
+    
+    
+    // MARK: - Appearance
+    
+    func windowsCount() -> Int {
+        return windows.count
+    }
+    
+    func window(at index: Int) -> WakeUpWindow.Value {
+        return windows[index]
     }
     
 }

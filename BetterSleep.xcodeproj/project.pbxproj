@@ -124,6 +124,11 @@
 		8EE32A9D21E23AA000FB3501 /* WaterDropsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE32A9C21E23AA000FB3501 /* WaterDropsView.swift */; };
 		8EE32A9F21E24ADB00FB3501 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE32A9E21E24ADB00FB3501 /* Button.swift */; };
 		8EE719F821EB69F30012B44E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE719F721EB69F30012B44E /* R.generated.swift */; };
+		8EECF9DC21F32E9A002BBED5 /* ChooseWakeUpWindowControllerCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9DB21F32E9A002BBED5 /* ChooseWakeUpWindowControllerCommunicator.swift */; };
+		8EECF9DE21F33022002BBED5 /* WakeUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9DD21F33022002BBED5 /* WakeUpWindow.swift */; };
+		8EECF9E221F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */; };
+		8EECF9E421F3349C002BBED5 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E321F3349C002BBED5 /* TableViewCell.swift */; };
+		8EECF9E621F3363D002BBED5 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9E521F3363D002BBED5 /* TableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -247,6 +252,11 @@
 		8EE32A9C21E23AA000FB3501 /* WaterDropsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterDropsView.swift; sourceTree = "<group>"; };
 		8EE32A9E21E24ADB00FB3501 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		8EE719F721EB69F30012B44E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		8EECF9DB21F32E9A002BBED5 /* ChooseWakeUpWindowControllerCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseWakeUpWindowControllerCommunicator.swift; sourceTree = "<group>"; };
+		8EECF9DD21F33022002BBED5 /* WakeUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpWindow.swift; sourceTree = "<group>"; };
+		8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpWindowNameTableViewCell.swift; sourceTree = "<group>"; };
+		8EECF9E321F3349C002BBED5 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8EECF9E521F3363D002BBED5 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
 		F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -383,6 +393,7 @@
 		8E1064FC21ED183600A17F96 /* ChooseWakeUpWindow */ = {
 			isa = PBXGroup;
 			children = (
+				8EECF9DA21F32E8A002BBED5 /* Communicator */,
 				8E10650421ED187A00A17F96 /* View */,
 				8E10650321ED187700A17F96 /* ViewModel */,
 				8E10650221ED187300A17F96 /* Controller */,
@@ -500,6 +511,7 @@
 			isa = PBXGroup;
 			children = (
 				8E357D1321F2688A00EBD98A /* AlarmTime.swift */,
+				8EECF9DD21F33022002BBED5 /* WakeUpWindow.swift */,
 			);
 			path = Alarm;
 			sourceTree = "<group>";
@@ -1237,6 +1249,7 @@
 				8EE32A9821E23A5400FB3501 /* Base */,
 				8EE32A9B21E23A6800FB3501 /* Animated */,
 				8E357D0D21F2656D00EBD98A /* Pickers */,
+				8EECF9DF21F3346C002BBED5 /* TableViewCells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1248,6 +1261,8 @@
 				8EE32A9E21E24ADB00FB3501 /* Button.swift */,
 				8E35B27621E28C5200B15F4E /* Label.swift */,
 				8E35B27E21E3840600B15F4E /* ImageView.swift */,
+				8EECF9E321F3349C002BBED5 /* TableViewCell.swift */,
+				8EECF9E521F3363D002BBED5 /* TableView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1266,6 +1281,30 @@
 				8EE719F721EB69F30012B44E /* R.generated.swift */,
 			);
 			path = Autogeneration;
+			sourceTree = "<group>";
+		};
+		8EECF9DA21F32E8A002BBED5 /* Communicator */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9DB21F32E9A002BBED5 /* ChooseWakeUpWindowControllerCommunicator.swift */,
+			);
+			path = Communicator;
+			sourceTree = "<group>";
+		};
+		8EECF9DF21F3346C002BBED5 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9E021F3347A002BBED5 /* WakeUpWindowNameTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		8EECF9E021F3347A002BBED5 /* WakeUpWindowNameTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9E121F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift */,
+			);
+			path = WakeUpWindowNameTableViewCell;
 			sourceTree = "<group>";
 		};
 		C333EB0A0E08C6D43025A2D1 /* Pods */ = {
@@ -1463,6 +1502,7 @@
 			files = (
 				8E5ADB7B21EBB37F00ED9F1A /* MainTabBarController.swift in Sources */,
 				8E6DEB7521DAB4EB00AFF109 /* BaseFlowAssembly.swift in Sources */,
+				8EECF9DE21F33022002BBED5 /* WakeUpWindow.swift in Sources */,
 				8E70EF6421D128FD001D6418 /* Coordinator.swift in Sources */,
 				8E1064D421ECCD3400A17F96 /* CreateSmartAlarmFlowAssembly.swift in Sources */,
 				8E6DEB3421DAA53100AFF109 /* ExtendedCoordinator.swift in Sources */,
@@ -1500,6 +1540,7 @@
 				8E1064D221ECCD2B00A17F96 /* CreateSmartAlarmFlow.swift in Sources */,
 				8E10650921ED18B100A17F96 /* ChooseWakeUpTimeControllerView.swift in Sources */,
 				8E6DEB6621DAAFA900AFF109 /* WelcomeControllerView.swift in Sources */,
+				8EECF9E621F3363D002BBED5 /* TableView.swift in Sources */,
 				8EBE7F5921E0C22D00A23E59 /* MainAppCoordinatorAssembly.swift in Sources */,
 				8E5ADBA121EBC80700ED9F1A /* TrackSleepCoordinatorAssembly.swift in Sources */,
 				8E6DEB4B21DAA78E00AFF109 /* WelcomeCoordinator.swift in Sources */,
@@ -1534,6 +1575,7 @@
 				8E5ADB8321EBC1E900ED9F1A /* StatisticsCoordinatorAssembly.swift in Sources */,
 				8E5ADB7021EBADF100ED9F1A /* main.swift in Sources */,
 				8E10650D21ED18F100A17F96 /* ChooseWakeUpTimeViewController.swift in Sources */,
+				8EECF9DC21F32E9A002BBED5 /* ChooseWakeUpWindowControllerCommunicator.swift in Sources */,
 				8E10651721ED19BF00A17F96 /* ChooseSleepMonitoringTypeControllerViewModel.swift in Sources */,
 				8E6DEB6E21DAB33700AFF109 /* BaseFlow.swift in Sources */,
 				8E35B26C21E2543900B15F4E /* WelcomeOnboardingControllerView.swift in Sources */,
@@ -1554,9 +1596,11 @@
 				8E35B28621E38CF200B15F4E /* LaunchControllerViewModel.swift in Sources */,
 				8E35B28421E38CE400B15F4E /* LaunchControllerView.swift in Sources */,
 				8E70EF5C21D12631001D6418 /* Application.swift in Sources */,
+				8EECF9E221F3348C002BBED5 /* WakeUpWindowNameTableViewCell.swift in Sources */,
 				8E35B27A21E292CB00B15F4E /* WelcomeOnboardingControllerCommunicator.swift in Sources */,
 				8E5ADB7321EBB13300ED9F1A /* MainFlow.swift in Sources */,
 				8E1064D621ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift in Sources */,
+				8EECF9E421F3349C002BBED5 /* TableViewCell.swift in Sources */,
 				8E70EF6D21D12AC1001D6418 /* AppCoordinator.swift in Sources */,
 				8E6DEB3221DAA48200AFF109 /* MainAppConfiguration.swift in Sources */,
 			);
