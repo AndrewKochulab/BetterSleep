@@ -27,7 +27,7 @@ final class CreateSmartAlarmPagerHeaderView: View {
             return !backButton.isHidden
         }
         set {
-            backButton.isHidden = newValue
+            backButton.isHidden = !newValue
         }
     }
     
@@ -53,6 +53,10 @@ final class CreateSmartAlarmPagerHeaderView: View {
     
     private func configuredBackButton() -> Button {
         let button = Button()
+        button.setImage(R.image.navigationBack()?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button.imageView?.contentMode = .scaleAspectFit
+        button.tintColor = #colorLiteral(red: 0.8789252639, green: 0.9116950631, blue: 0.924718082, alpha: 1)
+        button.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         
         button.didTouchUpInside = { [unowned self] _ in
             self.didPressBack?()
@@ -79,7 +83,7 @@ final class CreateSmartAlarmPagerHeaderView: View {
             maker.top.equalToSuperview()
             maker.bottom.equalToSuperview()
             maker.left.equalToSuperview()
-            maker.width.equalTo(80)
+            maker.width.equalTo(50)
         }
     }
     

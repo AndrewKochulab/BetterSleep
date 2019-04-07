@@ -24,10 +24,10 @@ final class TrackSleepViewController: ViewController<
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        rootView.setNeedsLayout()
-        rootView.layoutIfNeeded()
-        
-        startInitialAnimation()
+//        rootView.setNeedsLayout()
+//        rootView.layoutIfNeeded()
+//        
+//        startInitialAnimation()
     }
     
     

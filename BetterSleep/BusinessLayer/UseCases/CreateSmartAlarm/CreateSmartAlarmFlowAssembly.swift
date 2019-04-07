@@ -46,4 +46,13 @@ final class CreateSmartAlarmFlowAssembly: BaseFlowAssembly {
             pageViewModel: viewModel
         )
     }
+    
+    func requestMonitoringPermissionsController(
+        viewModel: RequestMonitoringPermissionsControllerViewModel = .init()
+    ) -> RequestMonitoringPermissionsViewController {
+        return .init(
+            pageView: RequestMonitoringPermissionsControllerView(),
+            pageViewModel: viewModel
+        )
+    }
 }

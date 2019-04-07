@@ -13,14 +13,21 @@ final class ChooseWakeUpTimeViewController: CreateSmartAlarmPageViewController {
     // MARK: - Properties
     // MARK: Content
     
-    lazy var pageViewModel: ChooseWakeUpTimeControllerViewModel = {
-        return viewModel as! ChooseWakeUpTimeControllerViewModel
-    }()
-    
+    lazy var pageViewModel = configuredViewModel()
+   
     // MARK: View
     
-    lazy var pageRootView: ChooseWakeUpTimeControllerView = {
-        return rootView as! ChooseWakeUpTimeControllerView
-    }()
+    lazy var pageRootView = configuredRootView()
     
+    
+    // MARK: - Appearance
+    // MARK: Configuration
+    
+    private func configuredViewModel() -> ChooseWakeUpTimeControllerViewModel {
+        return viewModel as! ChooseWakeUpTimeControllerViewModel
+    }
+    
+    private func configuredRootView() -> ChooseWakeUpTimeControllerView {
+        return rootView as! ChooseWakeUpTimeControllerView
+    }
 }

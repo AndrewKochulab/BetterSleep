@@ -13,14 +13,22 @@ final class ChooseSleepMonitoringTypeViewController: CreateSmartAlarmPageViewCon
     // MARK: - Properties
     // MARK: Content
     
-    lazy var pageViewModel: ChooseSleepMonitoringTypeControllerViewModel = {
-        return viewModel as! ChooseSleepMonitoringTypeControllerViewModel
-    }()
+    lazy var pageViewModel = configuredViewModel()
     
     // MARK: View
     
-    lazy var pageRootView: ChooseSleepMonitoringTypeControllerView = {
+    lazy var pageRootView = configuredRootView()
+    
+    
+    // MARK: - Appearance
+    // MARK: Configuration
+    
+    private func configuredViewModel() -> ChooseSleepMonitoringTypeControllerViewModel {
+        return viewModel as! ChooseSleepMonitoringTypeControllerViewModel
+    }
+    
+    private func configuredRootView() -> ChooseSleepMonitoringTypeControllerView {
         return rootView as! ChooseSleepMonitoringTypeControllerView
-    }()
+    }
     
 }

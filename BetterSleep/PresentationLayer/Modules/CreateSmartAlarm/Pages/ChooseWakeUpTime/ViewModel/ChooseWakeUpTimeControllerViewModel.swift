@@ -20,4 +20,8 @@ final class ChooseWakeUpTimeControllerViewModel: CreateSmartAlarmPageControllerV
         return "Simply drag left (hour) and right (minute) bars to define the latest time to wake up."
     }
     
+    override var isBackVisible: Bool {
+        return false
+    }
+    
 }

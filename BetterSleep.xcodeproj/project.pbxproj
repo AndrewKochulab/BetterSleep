@@ -132,6 +132,9 @@
 		8EECF9EB21F35125002BBED5 /* MonitoringTypeSelectionControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EA21F35125002BBED5 /* MonitoringTypeSelectionControl.swift */; };
 		8EECF9ED21F353EF002BBED5 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EC21F353EF002BBED5 /* Control.swift */; };
 		8EECF9EF21F3566F002BBED5 /* MonitoringType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9EE21F3566F002BBED5 /* MonitoringType.swift */; };
+		8EECF9F521F3BE73002BBED5 /* RequestMonitoringPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9F421F3BE73002BBED5 /* RequestMonitoringPermissionsViewController.swift */; };
+		8EECF9F721F3BE94002BBED5 /* RequestMonitoringPermissionsControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9F621F3BE94002BBED5 /* RequestMonitoringPermissionsControllerViewModel.swift */; };
+		8EECF9F921F3BEB0002BBED5 /* RequestMonitoringPermissionsControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EECF9F821F3BEB0002BBED5 /* RequestMonitoringPermissionsControllerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -263,6 +266,9 @@
 		8EECF9EA21F35125002BBED5 /* MonitoringTypeSelectionControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringTypeSelectionControl.swift; sourceTree = "<group>"; };
 		8EECF9EC21F353EF002BBED5 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		8EECF9EE21F3566F002BBED5 /* MonitoringType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringType.swift; sourceTree = "<group>"; };
+		8EECF9F421F3BE73002BBED5 /* RequestMonitoringPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMonitoringPermissionsViewController.swift; sourceTree = "<group>"; };
+		8EECF9F621F3BE94002BBED5 /* RequestMonitoringPermissionsControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMonitoringPermissionsControllerViewModel.swift; sourceTree = "<group>"; };
+		8EECF9F821F3BEB0002BBED5 /* RequestMonitoringPermissionsControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMonitoringPermissionsControllerView.swift; sourceTree = "<group>"; };
 		F20AB9039C71B0232BE6B298 /* Pods_BetterSleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetterSleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -348,6 +354,7 @@
 				8E1064FB21ED181800A17F96 /* ChooseWakeUpTime */,
 				8E1064FC21ED183600A17F96 /* ChooseWakeUpWindow */,
 				8E1064FD21ED184000A17F96 /* ChooseSleepMonitoringType */,
+				8EECF9F021F3BE17002BBED5 /* RequestMonitoringPermissions */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -1332,6 +1339,40 @@
 			path = MonitoringTypeSelectionControl;
 			sourceTree = "<group>";
 		};
+		8EECF9F021F3BE17002BBED5 /* RequestMonitoringPermissions */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9F321F3BE56002BBED5 /* View */,
+				8EECF9F221F3BE51002BBED5 /* ViewModel */,
+				8EECF9F121F3BE46002BBED5 /* Controller */,
+			);
+			path = RequestMonitoringPermissions;
+			sourceTree = "<group>";
+		};
+		8EECF9F121F3BE46002BBED5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9F421F3BE73002BBED5 /* RequestMonitoringPermissionsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EECF9F221F3BE51002BBED5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9F621F3BE94002BBED5 /* RequestMonitoringPermissionsControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8EECF9F321F3BE56002BBED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EECF9F821F3BEB0002BBED5 /* RequestMonitoringPermissionsControllerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C333EB0A0E08C6D43025A2D1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1545,6 +1586,7 @@
 				8E5ADB8E21EBC67D00ED9F1A /* SettingsControllerView.swift in Sources */,
 				8E6DEB3721DAA54900AFF109 /* BaseCoordinator.swift in Sources */,
 				8EE32A9121E206F000FB3501 /* UIView+Animation.swift in Sources */,
+				8EECF9F921F3BEB0002BBED5 /* RequestMonitoringPermissionsControllerView.swift in Sources */,
 				8E35B27021E2546200B15F4E /* WelcomeOnboardingViewController.swift in Sources */,
 				8E6DEB4021DAA5FC00AFF109 /* Notifiable.swift in Sources */,
 				8EE32A9A21E23A5E00FB3501 /* View.swift in Sources */,
@@ -1560,6 +1602,7 @@
 				8E6DEB3921DAA55900AFF109 /* BaseExtendedCoordinator.swift in Sources */,
 				8E6DEB4521DAA64500AFF109 /* BaseNotification.swift in Sources */,
 				8E5ADB8121EBC1DB00ED9F1A /* StatisticsCoordinator.swift in Sources */,
+				8EECF9F721F3BE94002BBED5 /* RequestMonitoringPermissionsControllerViewModel.swift in Sources */,
 				8E5ADB7E21EBB3BC00ED9F1A /* MainTabBarControllerViewModel.swift in Sources */,
 				8E357D1421F2688A00EBD98A /* AlarmTime.swift in Sources */,
 				8E5ADB8621EBC2A300ED9F1A /* SettingsCoordinator.swift in Sources */,
@@ -1628,6 +1671,7 @@
 				8E35B27A21E292CB00B15F4E /* WelcomeOnboardingControllerCommunicator.swift in Sources */,
 				8E5ADB7321EBB13300ED9F1A /* MainFlow.swift in Sources */,
 				8E1064D621ECCD3B00A17F96 /* CreateSmartAlarmFlowContent.swift in Sources */,
+				8EECF9F521F3BE73002BBED5 /* RequestMonitoringPermissionsViewController.swift in Sources */,
 				8EECF9E421F3349C002BBED5 /* TableViewCell.swift in Sources */,
 				8E70EF6D21D12AC1001D6418 /* AppCoordinator.swift in Sources */,
 				8E6DEB3221DAA48200AFF109 /* MainAppConfiguration.swift in Sources */,

@@ -19,6 +19,7 @@ final class CreateSmartAlarmFlowContent: FlowContent {
         case chooseAlarmTime
         case chooseAlarmWindow
         case chooseMonitoringType
+        case requestMonitoringPermissions
         
         // MARK: Appearance
         
@@ -36,6 +37,9 @@ final class CreateSmartAlarmFlowContent: FlowContent {
                 
                 case .chooseMonitoringType:
                     return .chooseAlarmWindow
+                
+                case .requestMonitoringPermissions:
+                    return .chooseMonitoringType
             }
         }
         
@@ -48,6 +52,9 @@ final class CreateSmartAlarmFlowContent: FlowContent {
                     return .chooseMonitoringType
                 
                 case .chooseMonitoringType:
+                    return .requestMonitoringPermissions
+                
+                case .requestMonitoringPermissions:
                     return nil
             }
         }

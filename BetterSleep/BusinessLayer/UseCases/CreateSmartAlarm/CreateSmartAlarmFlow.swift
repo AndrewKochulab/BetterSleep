@@ -91,6 +91,9 @@ final class CreateSmartAlarmFlow: BaseFlow<
             
             case .chooseMonitoringType:
                 return assembly.chooseSleepMonitoringTypeController()
+            
+            case .requestMonitoringPermissions:
+                return assembly.requestMonitoringPermissionsController()
         }
     }
     
@@ -107,6 +110,9 @@ final class CreateSmartAlarmFlow: BaseFlow<
             case is ChooseSleepMonitoringTypeViewController:
                 return .chooseMonitoringType
             
+            case is RequestMonitoringPermissionsViewController:
+                return .requestMonitoringPermissions
+            
             default:
                 return nil
         }
@@ -120,7 +126,7 @@ final class CreateSmartAlarmFlow: BaseFlow<
         }
         
         pageController.willChangeContent(to: previousViewController)
-        pager.pop(animated: true) {
+        pager.pop(animated: false) {
             self.content.visiblePage = page
         }
     }
@@ -130,7 +136,8 @@ final class CreateSmartAlarmFlow: BaseFlow<
     ) {
         let controller = pageViewController(for: page)
         pageController.willChangeContent(to: controller)
-        pager.push(controller: controller, animated: true, completion: { [unowned self] in
+        
+        pager.push(controller: controller, animated: false, completion: { [unowned self] in
             self.content.visiblePage = page
         })
     }
